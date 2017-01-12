@@ -61,7 +61,7 @@ public class Main {
 
     @AfterTest(description = "WebDriver clean up")
     public void cleanUp(){
-        driver.quit();
+        driver.close();
     }
 
 }
