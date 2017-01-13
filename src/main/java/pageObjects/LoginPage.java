@@ -9,13 +9,13 @@ public class LoginPage extends AbstractPage {
 
     public static final String LOGIN_PAGE_URL = "https://www.flickr.com/";
 
+    @FindBy(xpath ="//a[@data-track='gnSignin']")
+    private WebElement loginButton;
+
     public LoginPage(WebDriver driver) {
         super(driver);
         PageFactory.initElements(this.driver,this);
     }
-
-    @FindBy(xpath ="//a[@data-track='gnSignin']")
-    private WebElement loginButton;
 
     public YahooPage loginClick(){
         loginButton.click();

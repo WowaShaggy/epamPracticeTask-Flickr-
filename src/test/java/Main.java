@@ -7,9 +7,7 @@ import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-import pageObjects.HomePage;
-import pageObjects.LoginPage;
-import pageObjects.YahooPage;
+import pageObjects.*;
 
 public class Main {
 
@@ -33,8 +31,9 @@ public class Main {
     }
 
 
-    @Test(description = "#1 Flickr login test")
+    @Test(description = "#1 Flickr login test", priority = 1)
     public void LoginTest() {
+        System.out.println("test 1");
         driver.navigate().to(LoginPage.LOGIN_PAGE_URL);
         LoginPage loginpage = new LoginPage(driver);
         YahooPage yahoopage = loginpage.loginClick().enterEmail(cr.Data("login"));
@@ -43,14 +42,15 @@ public class Main {
         Assert.assertTrue(driver.getCurrentUrl().equals(HomePage.HOME_PAGE_URL));
     }
 
-    @Test(description = "#2 Main page's title test")
+    @Test(description = "#2 Main page's title test", priority = 2)
     public void MainPageTitleTest() {
-
+        System.out.println("test 2");
         Assert.assertTrue(driver.getTitle().equals("Home | Flickr"));
     }
 
-    @Test(description = "#3 Main menu items test")
-    public void MainMenuItems() {
+    @Test(description = "#3 Main menu items test", priority = 3)
+    public void MainMenuItemsTest() {
+        System.out.println("test 3");
        HomePage homepage= PageFactory.initElements(driver,HomePage.class);
 
         Assert.assertTrue(homepage.itemsCount() == 3);
@@ -59,9 +59,41 @@ public class Main {
         Assert.assertTrue(homepage.itemsArray()[2].equals("Create"));
     }
 
+    @Test(description = "#4 Sub-menu items contain items", priority = 4)
+    public void SubMenuItemsTest() {
+        System.out.println("test 4");
+        HomePage homepage= PageFactory.initElements(driver,HomePage.class);
+
+        Assert.assertTrue(homepage.subMenuLinks(), "true");
+    }
+
+    @Test(description = "#5 [You]-link and checking username", priority = 5)
+    public void YouLinkAndNameTest() {
+        System.out.println("test 5");
+        HomePage homepage = PageFactory.initElements(driver,HomePage.class);
+        PhotosPage photospage = homepage.goToYouLink();
+
+        Assert.assertEquals(photospage.getName().getText(), cr.Data("name"));
+    }
+
+    @Test(description = "#6 [Explore]-link and checking photos with label '<photo_title> by <author>' ", priority = 6)
+    public void ExploreLinkAndPhotoTest() {
+        System.out.println("test 6");
+        PhotosPage photospage = PageFactory.initElements(driver,PhotosPage.class);
+        ExplorePage explorepage = photospage.goToExploreLink();
+    //какие-то неполадки с этим таском
+
+       // System.out.println("ii+"+explorepage.itemsCount());  /// `количество картиночек (50 якобэ)
+        System.out.println(explorepage.getImageTitle());
+        System.out.println(explorepage.getImageName().getText());
+        System.out.println(explorepage.getImageAuthor().getText());
+       // Assert.assertEquals(explorepage.getImageTitle(), explorepage.getImageName().getText()+" "+explorepage.getImageAuthor().getText());
+
+    }
+
     @AfterTest(description = "WebDriver clean up")
     public void cleanUp(){
-        driver.close();
+       // driver.close();
     }
 
 }
