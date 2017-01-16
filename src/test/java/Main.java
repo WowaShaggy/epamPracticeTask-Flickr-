@@ -76,24 +76,25 @@ public class Main {
         Assert.assertEquals(photospage.getName().getText(), cr.Data("name"));
     }
 
-    @Test(description = "#6 [Explore]-link and checking photos with label '<photo_title> by <author>' ", priority = 6)
-    public void ExploreLinkAndPhotoTest() {
+    @Test(description = "#6 [Explore]-link and checking photos with label '<photo_title> by <author>' ", priority = 6, enabled = true)
+    public void ExploreLinkAndPhotoTest() { //С этим тестом вопросы: имя автора не отображается в названии изображения, только ник
         System.out.println("test 6");
         PhotosPage photospage = PageFactory.initElements(driver,PhotosPage.class);
         ExplorePage explorepage = photospage.goToExploreLink();
-    //какие-то неполадки с этим таском
 
-       // System.out.println("ii+"+explorepage.itemsCount());  /// `количество картиночек (50 якобэ)
-        System.out.println(explorepage.getImageTitle());
-        System.out.println(explorepage.getImageName().getText());
-        System.out.println(explorepage.getImageAuthor().getText());
-       // Assert.assertEquals(explorepage.getImageTitle(), explorepage.getImageName().getText()+" "+explorepage.getImageAuthor().getText());
+
+        for(int iC = 1; iC <= explorepage.itemsCount(); iC++){  // Выдает ошибки - смотри заметку? можно обойти завав вручную число картинок
+                //System.out.println(explorepage.getImageTitle(iC));
+                //System.out.println(explorepage.getImageName(iC).getAttribute("innerText"));
+                Assert.assertTrue(explorepage.getImageTitle(iC).contains(explorepage.getImageName(iC).getAttribute("innerText")));
+        }
 
     }
 
+
     @AfterTest(description = "WebDriver clean up")
     public void cleanUp(){
-       // driver.close();
+        //driver.close();
     }
 
 }

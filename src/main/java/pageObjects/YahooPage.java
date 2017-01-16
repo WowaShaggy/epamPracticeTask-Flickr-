@@ -38,7 +38,7 @@ public class YahooPage extends AbstractPage{
 
     public HomePage enterPassword(String s) {
 
-            WebDriverWait wait = new WebDriverWait(driver, 10);
+            WebDriverWait wait = new WebDriverWait(driver, 15);
             WebElement waitElement = wait.until(
                     ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[@id='forgotLnk']")));
 
