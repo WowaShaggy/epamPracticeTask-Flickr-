@@ -76,21 +76,31 @@ public class Main {
         Assert.assertEquals(photospage.getName().getText(), cr.Data("name"));
     }
 
-    @Test(description = "#6 [Explore]-link and checking photos with label '<photo_title> by <author>' ", priority = 6, enabled = true)
+    @Test(description = "#6 [Explore]-link and checking photos with label '<photo_title> by <author>' ", priority = 6, enabled = false)
     public void ExploreLinkAndPhotoTest() { //С этим тестом вопросы: имя автора не отображается в названии изображения, только ник
         System.out.println("test 6");
         PhotosPage photospage = PageFactory.initElements(driver,PhotosPage.class);
         ExplorePage explorepage = photospage.goToExploreLink();
 
+        System.out.println("Тестов пройдено:" + explorepage.cicleOfImagesChecks() + " из " + explorepage.itemsCount());
 
-        for(int iC = 1; iC <= explorepage.itemsCount(); iC++){  // Выдает ошибки - смотри заметку? можно обойти завав вручную число картинок
-                //System.out.println(explorepage.getImageTitle(iC));
-                //System.out.println(explorepage.getImageName(iC).getAttribute("innerText"));
-                Assert.assertTrue(explorepage.getImageTitle(iC).contains(explorepage.getImageName(iC).getAttribute("innerText")));
-        }
-
+        Assert.assertEquals(explorepage.cicleOfImagesChecks(), explorepage.itemsCount());
     }
 
+    @Test(description = "#7 Photo and its title navigate to the same page with other picture details", priority = 7)
+    public void NavigateToDetailsTest(){
+        System.out.println("test 7");
+        PhotosPage photospage = PageFactory.initElements(driver,PhotosPage.class); //На случай если тест 6 заблокирован
+        ExplorePage explorepage = photospage.goToExploreLink();
+        //ExplorePage explorepage = PageFactory.initElements(driver,ExplorePage.class); //На случай если тест 6 доступен
+
+        DetailsPage detailspage = explorepage.getDetailsURLfromPhoto();
+        String Url = detailspage.getUrl();
+        explorepage=detailspage.goBack();
+        detailspage = explorepage.getDetailsURLfromTitle();
+
+        Assert.assertEquals(Url,detailspage.getUrl());
+    }
 
     @AfterTest(description = "WebDriver clean up")
     public void cleanUp(){

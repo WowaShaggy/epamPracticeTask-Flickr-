@@ -24,13 +24,16 @@ public class PhotosPage extends AbstractPage {
 
     public WebElement getName () {
 
-            WebDriverWait wait = new WebDriverWait(driver, 10);
-            WebElement waitElement = wait.until(
+        WebDriverWait wait = new WebDriverWait(driver, 10);
+        WebElement waitElement = wait.until(
+                ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='title-block-content']")));
+
+            WebDriverWait wait2 = new WebDriverWait(driver, 10);
+            WebElement waitElement2 = wait.until(
                     ExpectedConditions.visibilityOfElementLocated(By.xpath("//h1[@class='truncate']")));
 
         return userName;
     }
-
 
     public ExplorePage goToExploreLink() {
         exploreLink.click();
