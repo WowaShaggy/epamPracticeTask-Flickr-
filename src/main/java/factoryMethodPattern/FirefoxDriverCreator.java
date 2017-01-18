@@ -9,6 +9,7 @@ public class FirefoxDriverCreator extends WebDriverCreator {
     public WebDriver factoryMethod(){
         System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") + "\\geckodriver.exe");
         driver = new FirefoxDriver();
+        driver.manage().window().maximize();
         return driver;
     }
 

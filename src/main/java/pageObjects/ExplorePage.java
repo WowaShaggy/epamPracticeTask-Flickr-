@@ -1,6 +1,7 @@
 package pageObjects;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -26,10 +27,10 @@ public class ExplorePage extends AbstractPage {
     @FindBy(xpath = "//div[@class='view photo-list-view']/div[1]//div[@class='text']/a[1]")
     public WebElement titlePath;
 
+
     public ExplorePage(WebDriver driver) {
         super(driver);
     }
-
 
     public int itemsCount() {
 
@@ -42,7 +43,7 @@ public class ExplorePage extends AbstractPage {
     }
 
     public String getImageTitle(int iC) {
-        WebDriverWait wait = new WebDriverWait(driver, 10);
+        WebDriverWait wait = new WebDriverWait(driver, 20);
         WebElement waitElement = wait.until(
                 ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='view photo-list-view']/div["+iC+"]"))); // Для второй
 
@@ -50,21 +51,27 @@ public class ExplorePage extends AbstractPage {
     }
 
     public WebElement getImageName(int iC) {
-
-        WebDriverWait wait = new WebDriverWait(driver, 10);
-        WebElement waitElement = wait.until(
-                ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='view photo-list-view']/div["+iC+"]")));
-
-        return photosFrame.findElement(By.xpath("div["+iC+"]//div[@class='text']/a[1]"));
+        try {
+            WebDriverWait wait = new WebDriverWait(driver, 10);
+            WebElement waitElement = wait.until(
+                    ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='view photo-list-view']/div[" + iC + "]")));
+            return photosFrame.findElement(By.xpath("div["+iC+"]//div[@class='text']/a[1]"));
+        }catch (NoSuchElementException e){
+            System.out.println(iC+"-image has no name");
+            return photosFrame.findElement(By.xpath("div["+iC+"]//div[@class='text']/span[1]"));
+        }
     }
 
     public WebElement getImageAuthor(int iC) {
-
-        WebDriverWait wait = new WebDriverWait(driver, 10);
-        WebElement waitElement = wait.until(
-                ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='view photo-list-view']/div["+iC+"]")));
-
-        return photosFrame.findElement(By.xpath("div["+iC+"]//a[@class='attribution']"));
+        try {
+            WebDriverWait wait = new WebDriverWait(driver, 10);
+            WebElement waitElement = wait.until(
+                    ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='view photo-list-view']/div["+iC+"]")));
+            return photosFrame.findElement(By.xpath("div["+iC+"]//a[@class='attribution']"));
+        }catch (NoSuchElementException e){
+            System.out.println(iC+"-image' author has no name");
+            return photosFrame.findElement(By.xpath("div["+iC+"]//div[@class='text']/span[2]"));
+        }
     }
 
     public int cicleOfImagesChecks() {
@@ -91,6 +98,7 @@ public class ExplorePage extends AbstractPage {
             WebDriverWait wait = new WebDriverWait(driver, 20);
             WebElement waitElement = wait.until(
                     ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='view photo-list-view']/div[1]")));
+
 
 /*
            WebElement we = driver.findElement(By.xpath("//a[@data-track='gnLogoClick']"));
