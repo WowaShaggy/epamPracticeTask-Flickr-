@@ -14,6 +14,9 @@ public class DetailsPage extends AbstractPage {
     @FindBy(xpath = "//div[@class='view sub-photo-left-view']")
     public WebElement photoView;
 
+    @FindBy(xpath = "//div[@class='view sub-photo-tags-view']")
+    public WebElement photoTags;
+
     public DetailsPage(WebDriver driver) {
         super(driver);
     }
@@ -130,5 +133,32 @@ public class DetailsPage extends AbstractPage {
         }
     }
 
+    public boolean checkTagsDetailsPhoto() {
+        int i=1;
+        try {
+            while (i<= driver.findElements(By.xpath("//div[@class='view sub-photo-tags-view']//ul[@class='tags-list']/li")).size()){
+                WebDriverWait wait = new WebDriverWait(driver, 15);
+                WebElement waitElement;
+                waitElement = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@class='view sub-photo-tags-view']//ul[@class='tags-list']/li["+i+"]/a")));
+                i++;
+            }
+            return true;
 
+        } catch (NoSuchElementException e) {
+            System.out.println("I think and I hope you are never see this message because that will mean, that something is wrong with tags");
+            return false;
+        }
+    }
+
+
+    public AuthorsPage goToAuthorsPage() {
+        WebDriverWait wait = new WebDriverWait(driver, 10);
+        WebElement waitElement = wait.until(
+                ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='view sub-photo-left-view']//div[@class='attribution-info']/a[1]")));
+
+        driver.findElement(By.xpath("//div[@class='view sub-photo-left-view']//div[@class='attribution-info']/a[1]")).click();
+
+        return PageFactory.initElements(driver,AuthorsPage.class);
+
+    }
 }

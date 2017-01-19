@@ -11,6 +11,14 @@ public class HomePage extends AbstractPage {
 
     public static final String HOME_PAGE_URL = "https://www.flickr.com/";
 
+    public static final String HOME_PAGE_TITLE = "Home | Flickr";
+
+    public static final int HOME_PAGE_ITEM_NUMBER = 3;
+    public static final String HOME_PAGE_ITEM_1 = "You";
+    public static final String HOME_PAGE_ITEM_2 = "Explore";
+    public static final String HOME_PAGE_ITEM_3 = "Create";
+
+
     @FindBy(xpath="//ul[@class='nav-menu']")
     public WebElement navMenu;
 

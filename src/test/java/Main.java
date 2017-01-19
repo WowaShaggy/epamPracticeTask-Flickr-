@@ -17,6 +17,7 @@ public class Main {
 
     @BeforeTest(description = "WebDriver init")
     public void prepare() {
+
         switch (cr.Data("browzer")) {
             case "Firefox": {
                 creator = new FirefoxDriverCreator();
@@ -46,24 +47,25 @@ public class Main {
     @Test(description = "#2 Main page's title test", priority = 2)
     public void MainPageTitleTest() {
         System.out.println("test 2");
-        Assert.assertTrue(driver.getTitle().equals("Home | Flickr"));
+        HomePage homepage= PageFactory.initElements(driver,HomePage.class);
+        Assert.assertTrue(driver.getTitle().equals(homepage.HOME_PAGE_TITLE));
     }
-
-
 
     @Test(description = "#3.1 Main menu items count test", priority = 3)
     public void MainMenuItemsContTest() {
         System.out.println("test 3.1");
         HomePage homepage= PageFactory.initElements(driver,HomePage.class);
-        Assert.assertTrue(homepage.itemsCount() == 3);
+        Assert.assertTrue(homepage.itemsCount() == homepage.HOME_PAGE_ITEM_NUMBER);
     }
 
     @Test(description = "#3.2 Main menu items test", priority = 3)
     public void MainMenuItemsTest() {
         System.out.println("test 3.2");
        HomePage homepage= PageFactory.initElements(driver,HomePage.class);
-        String fullName = homepage.itemsArray()[0] + homepage.itemsArray()[1] + homepage.itemsArray()[2];
-                Assert.assertEquals(fullName,"YouExploreCreate");
+        String resultingName = homepage.itemsArray()[0] + homepage.itemsArray()[1] + homepage.itemsArray()[2];
+        String expectedName = homepage.HOME_PAGE_ITEM_1 + homepage.HOME_PAGE_ITEM_2 + homepage.HOME_PAGE_ITEM_3;
+
+                Assert.assertEquals(resultingName,expectedName);
     }
 
     @Test(description = "#4 Sub-menu items contain items", priority = 4)
@@ -90,6 +92,7 @@ public class Main {
         ExplorePage explorepage = photospage.goToExploreLink();
         int numberPassedTests = explorepage.cicleOfImagesChecks();
         int numberAllTests = explorepage.itemsCount();
+
         System.out.println("Тестов пройдено:" + numberPassedTests + " из " + numberAllTests);
 
         Assert.assertEquals(numberPassedTests, numberAllTests);
@@ -117,10 +120,6 @@ public class Main {
         DetailsPage detailspage = PageFactory.initElements(driver,DetailsPage.class);
 
         Assert.assertTrue(detailspage.getTitlePage().contains(detailspage.getTitlePhoto()));
-        // 8.4 Дата в формате “Taken on <month day, year>”
-        // 8.5 Ссылка на ЗАЩИЩЕННЫЕПРАВА
-        // 8.6 Информация о камере
-        // 8.7 Тэги-ссылки
     }
 
     @Test(description = "#8.1.2 Page with photo details contains every all necessary items (Author)", priority = 8)
@@ -147,7 +146,7 @@ public class Main {
         Assert.assertTrue(detailspage.checkNumbersPhoto());
     }
 
-    @Test(description = "#8.4 Page with photo details contains every all necessary items (Date of photo )", priority = 8, enabled = false)
+    @Test(description = "#8.4 Page with photo details contains every all necessary items (Date of photo)", priority = 8, enabled = true)
     public void DetailsDateTest(){      // Возможно необходима более мощная проверка даты
         System.out.println("test 8.4");
         DetailsPage detailspage = PageFactory.initElements(driver,DetailsPage.class);
@@ -155,7 +154,7 @@ public class Main {
         Assert.assertTrue(detailspage.getDatePhoto().contains("Taken on "));
     }
 
-    @Test(description = "#8.5 Page with photo details contains every all necessary items (Rights link )", priority = 8)
+    @Test(description = "#8.5 Page with photo details contains every all necessary items (Rights link)", priority = 8)
     public void DetailsRightsTest(){
         System.out.println("test 8.5");
         DetailsPage detailspage = PageFactory.initElements(driver,DetailsPage.class);
@@ -163,12 +162,38 @@ public class Main {
         Assert.assertTrue(detailspage.checkRightsPhoto());
     }
 
-    @Test(description = "#8.6 Page with photo details contains every all necessary items (Camera )", priority = 8)
+    @Test(description = "#8.6 Page with photo details contains every all necessary items (Camera)", priority = 8)
     public void DetailsCameraTest(){
         System.out.println("test 8.6");
         DetailsPage detailspage = PageFactory.initElements(driver,DetailsPage.class);
 
         Assert.assertTrue(detailspage.checkCameraDetailsPhoto());
+    }
+
+    @Test(description = "#8.7 Page with photo details contains every all necessary items (Tags)", priority = 8,  enabled = true )
+    public void DetailsTagsTest(){
+        System.out.println("test 8.7");
+        DetailsPage detailspage = PageFactory.initElements(driver,DetailsPage.class);
+
+        Assert.assertTrue(detailspage.checkTagsDetailsPhoto(), "true");
+    }
+
+    @Test(description = "#9 Author’s name navigates to the page with author’s photostream", priority = 9)
+    public void AuthorsLinkTest(){
+        System.out.println("test 9");
+        DetailsPage detailspage = PageFactory.initElements(driver,DetailsPage.class);
+        AuthorsPage authorsPage = detailspage.goToAuthorsPage();
+
+        Assert.assertTrue(authorsPage.getTitle().contains(authorsPage.getName()));
+    }
+
+    @Test(description = "#10 Every Album has a thumbnail, title, link and a number of photos and views ", priority = 10)
+    public void AlbumTest() throws InterruptedException {
+        System.out.println("test 10");
+        AuthorsPage authorsPage = PageFactory.initElements(driver,AuthorsPage.class);
+        authorsPage.goToAlbums().checkNumberOfAlbums();
+
+        Assert.assertEquals(authorsPage.cicleOfAlbumChecks(),authorsPage.albumCounter());
     }
 
     @AfterTest(description = "WebDriver clean up")
