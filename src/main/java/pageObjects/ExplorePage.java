@@ -113,8 +113,6 @@ public class ExplorePage extends AbstractPage {
            WebElement we = driver.findElement(By.xpath("//a[@data-track='gnLogoClick']"));
            action.moveToElement(we).moveToElement(photoPath).moveToElement(photoLinkPath).click().build().perform();
 
-
-
         return PageFactory.initElements(driver,DetailsPage.class);
     }
 

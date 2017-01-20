@@ -187,7 +187,7 @@ public class Main {
         Assert.assertTrue(authorsPage.getTitle().contains(authorsPage.getName()));
     }
 
-    @Test(description = "#10 Every Album has a thumbnail, title, link and a number of photos and views ", priority = 10)
+    @Test(description = "#10 Every Album has a thumbnail, title, link and a number of photos and views ", priority = 10,  enabled = false)
     public void AlbumTest() throws InterruptedException {
         System.out.println("test 10");
         AuthorsPage authorsPage = PageFactory.initElements(driver,AuthorsPage.class);
@@ -195,6 +195,63 @@ public class Main {
 
         Assert.assertEquals(authorsPage.cicleOfAlbumChecks(),authorsPage.albumCounter());
     }
+
+    @Test(description = "#11.1 Additional own testing scenarios ([You]->[Groups]). Check Url", priority = 11)
+    public void GroupsTestURL() {
+        System.out.println("test 11.1");
+        AuthorsPage authorsPage = PageFactory.initElements(driver,AuthorsPage.class);
+
+        GroupsPage groupsPage = authorsPage.goToGroupsPage();
+
+        Assert.assertEquals(driver.getCurrentUrl(),groupsPage.GROUPS_PAGE_URL);
+    }
+
+    @Test(description = "#11.2 Additional own testing scenarios ([You]->[Groups]). Check recommended group", priority = 12)
+    public void GroupsTestRecommendedGroups(){
+        System.out.println("test 11.2");
+        GroupsPage groupsPage = PageFactory.initElements(driver,GroupsPage.class);
+
+        Assert.assertEquals(groupsPage.checkRecommendedGroups(),true);
+    }
+
+    @Test(description = "#12.1 Additional own testing scenarios ([Explore]->[Galleries]). Check Url", priority = 13)
+    public void GalleriesTestURL() {
+        System.out.println("test 12.1");
+        AuthorsPage authorsPage = PageFactory.initElements(driver,AuthorsPage.class);
+
+        GalleriesPage galleriesPage = authorsPage.goToGalleriesPage();
+
+        Assert.assertEquals(driver.getCurrentUrl(),galleriesPage.GALLERIES_PAGE_URL);
+    }
+
+    @Test(description = "#12.2 Additional own testing scenarios ([Explore]->[Galleries]). Check gallery's items", priority = 14)
+    public void GalleriesTestItems(){
+        System.out.println("test 12.2");
+        GalleriesPage galleriesPage = PageFactory.initElements(driver,GalleriesPage.class);
+
+        Assert.assertEquals(galleriesPage.checkGallery(),true);
+    }
+
+    @Test(description = "#13.1 Additional own testing scenarios (Search functionality). Search Url", priority = 15)
+    public void SearchTestUrl(){
+        System.out.println("test 13.1");
+        GalleriesPage galleriesPage = PageFactory.initElements(driver,GalleriesPage.class);
+
+        SearchPage searchPage = galleriesPage.goToSearchPageByButton();
+
+        Assert.assertEquals(searchPage.SEARCH_PAGE_URL, driver.getCurrentUrl());
+    }
+
+    @Test(description = "#13.2 Additional own testing scenarios (Search functionality). Search Photo", priority = 16)
+    public void SearchTestPhoto(){
+        System.out.println("test 13.2");
+        SearchPage searchPage  = PageFactory.initElements(driver,SearchPage.class);
+
+        searchPage.sendRequest("Red Panda");
+
+    }
+
+
 
     @AfterTest(description = "WebDriver clean up")
     public void cleanUp(){

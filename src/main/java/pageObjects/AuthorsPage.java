@@ -4,6 +4,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -41,7 +43,7 @@ public class AuthorsPage extends AbstractPage{
 
     public AuthorsPage checkNumberOfAlbums() throws InterruptedException {
 
-        Thread.sleep(5000);///////////////////////////////////////Поменять на JS ожидание?
+        Thread.sleep(7000);///////////////////////////////////////Поменять на JS ожидание?
 
         try {
             WebDriverWait wait = new WebDriverWait(driver, 20);
@@ -145,5 +147,36 @@ public class AuthorsPage extends AbstractPage{
         return albumPassCount;
     }
 
+    public GroupsPage goToGroupsPage() {
+            WebDriverWait wait = new WebDriverWait(driver, 20);
+            WebElement waitElement = wait.until(
+                    ExpectedConditions.visibilityOfElementLocated(By.xpath("//li[@data-context='you']")));
 
+        Actions action = new Actions(driver);
+        WebElement we = driver.findElement(By.xpath("//li[@data-context='you']"));
+        WebElement we2 = driver.findElement(By.xpath("//li[@data-context='you']//a[@data-track='gnYouGroupsClick']"));
+        action.moveToElement(we).moveToElement(we2).click().build().perform();
+
+            waitElement = wait.until(
+                    ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='group-actions']")));
+
+        return PageFactory.initElements(driver,GroupsPage.class);
+    }
+
+    public GalleriesPage goToGalleriesPage() {
+
+        WebDriverWait wait = new WebDriverWait(driver, 20);
+        WebElement waitElement = wait.until(
+                ExpectedConditions.visibilityOfElementLocated(By.xpath("//li[@data-context='explore']")));
+
+        Actions action = new Actions(driver);
+        WebElement we = driver.findElement(By.xpath("//li[@data-context='explore']"));
+        WebElement we2 = driver.findElement(By.xpath("//li[@data-context='explore']//a[@data-track='gnExploreGalleriesClick']"));
+        action.moveToElement(we).moveToElement(we2).click().build().perform();
+
+        waitElement = wait.until(
+                ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[@data-track='edit-relationship']")));
+
+        return PageFactory.initElements(driver,GalleriesPage.class);
+    }
 }
