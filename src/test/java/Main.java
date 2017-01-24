@@ -32,7 +32,6 @@ public class Main {
         }
     }
 
-
     @Test(description = "#1 Flickr login test", priority = 1)
     public void LoginTest() {
         System.out.println("test 1");
@@ -48,6 +47,7 @@ public class Main {
     public void MainPageTitleTest() {
         System.out.println("test 2");
         HomePage homepage= PageFactory.initElements(driver,HomePage.class);
+
         Assert.assertTrue(driver.getTitle().equals(homepage.HOME_PAGE_TITLE));
     }
 
@@ -55,17 +55,18 @@ public class Main {
     public void MainMenuItemsContTest() {
         System.out.println("test 3.1");
         HomePage homepage= PageFactory.initElements(driver,HomePage.class);
+
         Assert.assertTrue(homepage.itemsCount() == homepage.HOME_PAGE_ITEM_NUMBER);
     }
 
     @Test(description = "#3.2 Main menu items test", priority = 3)
     public void MainMenuItemsTest() {
         System.out.println("test 3.2");
-       HomePage homepage= PageFactory.initElements(driver,HomePage.class);
+        HomePage homepage= PageFactory.initElements(driver,HomePage.class);
         String resultingName = homepage.itemsArray()[0] + homepage.itemsArray()[1] + homepage.itemsArray()[2];
         String expectedName = homepage.HOME_PAGE_ITEM_1 + homepage.HOME_PAGE_ITEM_2 + homepage.HOME_PAGE_ITEM_3;
 
-                Assert.assertEquals(resultingName,expectedName);
+        Assert.assertEquals(resultingName,expectedName);
     }
 
     @Test(description = "#4 Sub-menu items contain items", priority = 4)
@@ -85,7 +86,7 @@ public class Main {
         Assert.assertEquals(photospage.getName().getText(), cr.Data("name"));
     }
 
-    @Test(description = "#6 [Explore]-link and checking photos with label '<photo_title> by <author>' ", priority = 6, enabled = false)
+    @Test(description = "#6 [Explore]-link and checking photos with label '<photo_title> by <author>' ", priority = 6, enabled = true)
     public void ExploreLinkAndPhotoTest() { //С этим тестом вопросы: имя автора не отображается в названии изображения, только ник
         System.out.println("test 6");
         PhotosPage photospage = PageFactory.initElements(driver,PhotosPage.class);
@@ -101,14 +102,11 @@ public class Main {
     @Test(description = "#7 Photo and its title navigate to the same page with other picture details", priority = 7)
     public void NavigateToDetailsTest(){   /*для одной фотографии*/
         System.out.println("test 7");
-
         PhotosPage photospage = PageFactory.initElements(driver,PhotosPage.class); //На случай если тест 6 заблокирован
         ExplorePage explorepage = photospage.goToExploreLink();
-        //ExplorePage explorepage = PageFactory.initElements(driver,ExplorePage.class); //На случай если тест 6 доступен
-
         DetailsPage detailspage = explorepage.getDetailsURLfromPhoto();
         String Url = detailspage.getUrl();
-        explorepage=detailspage.goBack();
+        explorepage = detailspage.goBack();
         detailspage = explorepage.getDetailsURLfromTitle();
 
         Assert.assertEquals(Url,detailspage.getUrl());
@@ -151,7 +149,7 @@ public class Main {
         System.out.println("test 8.4");
         DetailsPage detailspage = PageFactory.initElements(driver,DetailsPage.class);
 
-        Assert.assertTrue(detailspage.getDatePhoto().contains("Taken on "));
+        Assert.assertTrue(detailspage.getDatePhoto());
     }
 
     @Test(description = "#8.5 Page with photo details contains every all necessary items (Rights link)", priority = 8)
@@ -187,11 +185,12 @@ public class Main {
         Assert.assertTrue(authorsPage.getTitle().contains(authorsPage.getName()));
     }
 
-    @Test(description = "#10 Every Album has a thumbnail, title, link and a number of photos and views ", priority = 10,  enabled = false)
+    @Test(description = "#10 Every Album has a thumbnail, title, link and a number of photos and views ", priority = 10,  enabled = true)
     public void AlbumTest() throws InterruptedException {
         System.out.println("test 10");
         AuthorsPage authorsPage = PageFactory.initElements(driver,AuthorsPage.class);
-        authorsPage.goToAlbums().checkNumberOfAlbums();
+        authorsPage.goToAlbums().JSwait();
+        authorsPage.checkNumberOfAlbums();
 
         Assert.assertEquals(authorsPage.cicleOfAlbumChecks(),authorsPage.albumCounter());
     }
@@ -200,7 +199,6 @@ public class Main {
     public void GroupsTestURL() {
         System.out.println("test 11.1");
         AuthorsPage authorsPage = PageFactory.initElements(driver,AuthorsPage.class);
-
         GroupsPage groupsPage = authorsPage.goToGroupsPage();
 
         Assert.assertEquals(driver.getCurrentUrl(),groupsPage.GROUPS_PAGE_URL);
@@ -218,7 +216,6 @@ public class Main {
     public void GalleriesTestURL() {
         System.out.println("test 12.1");
         AuthorsPage authorsPage = PageFactory.initElements(driver,AuthorsPage.class);
-
         GalleriesPage galleriesPage = authorsPage.goToGalleriesPage();
 
         Assert.assertEquals(driver.getCurrentUrl(),galleriesPage.GALLERIES_PAGE_URL);
@@ -236,22 +233,20 @@ public class Main {
     public void SearchTestUrl(){
         System.out.println("test 13.1");
         GalleriesPage galleriesPage = PageFactory.initElements(driver,GalleriesPage.class);
-
         SearchPage searchPage = galleriesPage.goToSearchPageByButton();
 
         Assert.assertEquals(searchPage.SEARCH_PAGE_URL, driver.getCurrentUrl());
     }
 
     @Test(description = "#13.2 Additional own testing scenarios (Search functionality). Search Photo", priority = 16)
-    public void SearchTestPhoto(){
+    public void SearchTestPhoto() throws InterruptedException {
         System.out.println("test 13.2");
         SearchPage searchPage  = PageFactory.initElements(driver,SearchPage.class);
+        String searchRequest = "Red Panda";
+        searchPage.sendRequest(searchRequest);
 
-        searchPage.sendRequest("Red Panda");
-
+        Assert.assertEquals(searchPage.getFirstTitle().contains(searchRequest), true, "Your search returned incorrect results, possibly due Firefox!  ");
     }
-
-
 
     @AfterTest(description = "WebDriver clean up")
     public void cleanUp(){

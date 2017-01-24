@@ -1,9 +1,7 @@
 package pageObjects;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.NoSuchElementException;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import com.google.common.base.Predicate;
+import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -32,7 +30,8 @@ public class AuthorsPage extends AbstractPage{
     }
 
     public AuthorsPage goToAlbums() {
-        WebDriverWait wait = new WebDriverWait(driver, 15);
+
+        WebDriverWait wait = new WebDriverWait(driver, 20);
         WebElement waitElement = wait.until(
                 ExpectedConditions.visibilityOfElementLocated(By.xpath("//ul[@class='links']/li[@id='albums']")));
 
@@ -43,7 +42,7 @@ public class AuthorsPage extends AbstractPage{
 
     public AuthorsPage checkNumberOfAlbums() throws InterruptedException {
 
-        Thread.sleep(7000);///////////////////////////////////////Поменять на JS ожидание?
+        Thread.sleep(9000);
 
         try {
             WebDriverWait wait = new WebDriverWait(driver, 20);
@@ -178,5 +177,19 @@ public class AuthorsPage extends AbstractPage{
                 ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[@data-track='edit-relationship']")));
 
         return PageFactory.initElements(driver,GalleriesPage.class);
+    }
+
+    public void JSwait() {
+
+        WebDriverWait wait = new WebDriverWait(driver, 50);
+
+        wait.until( new Predicate<WebDriver>() {
+                public boolean apply (WebDriver driver){
+                return ((JavascriptExecutor) driver).executeScript("return document.readyState").equals("complete");
+            }
+
+        }
+        );
+        System.out.println("inside");
     }
 }

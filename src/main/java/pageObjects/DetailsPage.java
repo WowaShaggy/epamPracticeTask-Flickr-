@@ -1,13 +1,13 @@
 package pageObjects;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.NoSuchElementException;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 
 public class DetailsPage extends AbstractPage {
 
@@ -94,16 +94,30 @@ public class DetailsPage extends AbstractPage {
         }
     }
 
-    public String getDatePhoto() {
+    public boolean getDatePhoto() {
         try {
             WebDriverWait wait = new WebDriverWait(driver, 10);
             WebElement waitElement = wait.until(
                     ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[@class='date-taken-label']")));
 
-            return driver.findElement(By.xpath("//span[@class='date-taken-label']")).getAttribute("innerText");
+            String examleDate = driver.findElement(By.xpath("//span[@class='date-taken-label']")).getAttribute("innerText");
+
+            try {
+                SimpleDateFormat format = new SimpleDateFormat("'Taken on' MMM dd, yyyy");
+                format.setLenient(false);
+                format.parse(examleDate);
+                //System.out.println(format.parse(examleDate));
+                return true;
+            } catch (ParseException ex) {
+                System.out.println(ex.getStackTrace());
+                System.out.println(ex.getMessage());
+                System.out.println("invalid date");
+                return false;
+            }
 
         } catch (NoSuchElementException e) {
-            return "Photo has no date";
+            System.out.println("Photo has no date");
+            return false;
         }
     }
 
@@ -128,7 +142,8 @@ public class DetailsPage extends AbstractPage {
 
             return true;
 
-        } catch (NoSuchElementException e) {
+        } catch (TimeoutException e) {
+            System.out.println("There is no camera details");
             return false;
         }
     }
