@@ -36,6 +36,10 @@ public class PhotosPage extends AbstractPage {
     }
 
     public ExplorePage goToExploreLink() {
+
+        WebDriverWait wait = new WebDriverWait(driver, 10);
+        WebElement waitElement = wait.until(
+                ExpectedConditions.visibilityOfElementLocated(By.cssSelector("a[data-track='gnExploreMainClick']")));
         exploreLink.click();
 
         return PageFactory.initElements(driver,ExplorePage.class);

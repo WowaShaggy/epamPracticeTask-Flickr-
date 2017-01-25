@@ -1,9 +1,9 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="parallel" parallel="tests" thread-count="2">
+<suite name="parallelTest" parallel="methods" thread-count="1">
 
     <test name="flickr testing scenarios">
         <classes>
-            <class name="Main">
+            <class name="MainIndependent">
             </class>
         </classes>
     </test>

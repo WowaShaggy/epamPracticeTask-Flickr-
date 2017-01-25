@@ -35,7 +35,6 @@ public class DetailsPage extends AbstractPage {
                 WebDriverWait wait = new WebDriverWait(driver, 10);
                 WebElement waitElement = wait.until(
                         ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='view sub-photo-left-view']//h1[@class=' meta-field photo-title ']")));
-
             return photoView.findElement(By.xpath("//h1[@class=' meta-field photo-title ']")).getAttribute("innerText");
 
         } catch (NoSuchElementException e) {
@@ -57,6 +56,10 @@ public class DetailsPage extends AbstractPage {
     }
 
     public String getTitlePage() {
+
+        WebDriverWait wait = new WebDriverWait(driver, 10);
+        WebElement waitElement = wait.until(
+                ExpectedConditions.visibilityOfElementLocated(By.xpath("//i[@class='ui-icon-download']")));
         try {
             return driver.getTitle();
         } catch (NoSuchElementException e) {
@@ -154,7 +157,7 @@ public class DetailsPage extends AbstractPage {
             while (i<= driver.findElements(By.xpath("//div[@class='view sub-photo-tags-view']//ul[@class='tags-list']/li")).size()){
                 WebDriverWait wait = new WebDriverWait(driver, 15);
                 WebElement waitElement;
-                waitElement = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@class='view sub-photo-tags-view']//ul[@class='tags-list']/li["+i+"]/a")));
+                waitElement = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[starts-with(@class,'view sub-photo-tags-view')]//ul[@class='tags-list']/li["+i+"]/a")));
                 i++;
             }
             return true;

@@ -57,7 +57,7 @@ public class SearchPage extends AbstractPage {
             WebElement waitElement = wait.until(
                     ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@class='main search-photos-results']/div/div[2]/div[1]")));
         }catch(TimeoutException eE){
-            System.out.println("something is wrong! Try again");
+            System.out.println("We can't navigate to necessary page");
         }
 
         return driver.findElement(By.xpath("//div[@class='main search-photos-results']/div/div[2]/div[1]/div/div/a")).getAttribute("aria-label");

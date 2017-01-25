@@ -5,7 +5,9 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -64,4 +66,21 @@ public class GroupsPage extends AbstractPage {
             return false;
         }
     }
+
+        public GalleriesPage goToGalleriesPage() {
+
+            WebDriverWait wait = new WebDriverWait(driver, 20);
+            WebElement waitElement = wait.until(
+                    ExpectedConditions.visibilityOfElementLocated(By.xpath("//li[@data-context='explore']")));
+
+            Actions action = new Actions(driver);
+            WebElement we = driver.findElement(By.xpath("//li[@data-context='explore']"));
+            WebElement we2 = driver.findElement(By.xpath("//li[@data-context='explore']//a[@data-track='gnExploreGalleriesClick']"));
+            action.moveToElement(we).moveToElement(we2).click().build().perform();
+
+            waitElement = wait.until(
+                    ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[@data-track='edit-relationship']")));
+
+            return PageFactory.initElements(driver,GalleriesPage.class);
+        }
 }

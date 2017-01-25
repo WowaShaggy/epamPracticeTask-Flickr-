@@ -15,16 +15,24 @@ public class ExplorePage extends AbstractPage {
     public static final String EXPLORE_PAGE_URL = "https://www.flickr.com/explore";
     public String title, name, author;
 
-    @FindBy(xpath = "//div[@class='view photo-list-view']")
+    @FindBy(xpath = "//div[starts-with(@class,'view photo-list-view')]")
     public WebElement photosFrame;
 
-    @FindBy(xpath = "//div[@class='view photo-list-view']/div[1]")
+   /* @FindBy(xpath = "//div[@class='view photo-list-view']/div[1]")
+    public WebElement photoPath;
+    */
+
+    @FindBy(xpath = "//div[@role='main']/div[2]/div[1]")
     public WebElement photoPath;
 
-    @FindBy(xpath = "//div[@class='view photo-list-view']/div[1]//a[@role='heading']")
+    /*@FindBy(xpath = "//div[@class='view photo-list-view']/div[1]//a[@role='heading']")
+    public WebElement photoLinkPath;
+    */
+
+    @FindBy(xpath = "//div[@role='main']/div[2]/div[1]//a[@role='heading']")
     public WebElement photoLinkPath;
 
-    @FindBy(xpath = "//div[@class='view photo-list-view']/div[1]//div[@class='text']/a[1]")
+    @FindBy(xpath = "//div[starts-with(@class,'view photo-list-view')]/div[1]//div[@class='text']/a[1]")
     public WebElement titlePath;
 
 
@@ -36,7 +44,7 @@ public class ExplorePage extends AbstractPage {
 
         WebDriverWait wait = new WebDriverWait(driver, 10);
         WebElement waitElement = wait.until(
-                ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='view photo-list-view']")));//копия photosFrame
+                ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@role='main']/div[2]/div[1]")));
 
         return photosFrame.findElements(By.xpath("//div[@class='interaction-view']")).size();
 
@@ -97,7 +105,8 @@ public class ExplorePage extends AbstractPage {
 
             WebDriverWait wait = new WebDriverWait(driver, 20);
             WebElement waitElement = wait.until(
-                    ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='view photo-list-view']/div[1]")));
+                   // ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@class='view photo-list-view']/div[1]")));
+                    ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@role='main']/div[2]/div[1]")));
 
 
 /*
@@ -111,7 +120,14 @@ public class ExplorePage extends AbstractPage {
 
         Actions action = new Actions(driver);
            WebElement we = driver.findElement(By.xpath("//a[@data-track='gnLogoClick']"));
+
+        waitElement = wait.until(
+                ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@role='main']/div[2]/div[1]//a[@role='heading']")));
+
            action.moveToElement(we).moveToElement(photoPath).moveToElement(photoLinkPath).click().build().perform();
+
+        waitElement = wait.until(
+                ExpectedConditions.presenceOfElementLocated(By.xpath("//i[@class='ui-icon-download']")));
 
         return PageFactory.initElements(driver,DetailsPage.class);
     }
@@ -120,11 +136,18 @@ public class ExplorePage extends AbstractPage {
 
         WebDriverWait wait = new WebDriverWait(driver, 20);
         WebElement waitElement = wait.until(
-                ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='view photo-list-view']/div[1]")));
+                ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[starts-with(@class,'view photo-list-view')]/div[1]")));
 
         Actions action = new Actions(driver);
-        WebElement we = driver.findElement(By.xpath("//div[@class='view photo-list-view']/div[1]"));
-        action.moveToElement(we).moveToElement(photoPath).moveToElement(titlePath).click().build().perform();;
+        WebElement we = driver.findElement(By.xpath("//div[starts-with(@class,'view photo-list-view')]/div[1]"));
+
+        waitElement = wait.until(
+                ExpectedConditions.presenceOfElementLocated(By.xpath("//div[starts-with(@class,'view photo-list-view')]/div[1]//div[@class='text']/a[1]")));
+
+        action.moveToElement(we).moveToElement(photoPath).moveToElement(titlePath).click().build().perform();
+
+        waitElement = wait.until(
+                ExpectedConditions.presenceOfElementLocated(By.xpath("//i[@class='ui-icon-download']")));
 
         return PageFactory.initElements(driver,DetailsPage.class);
     }

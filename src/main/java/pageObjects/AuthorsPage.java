@@ -147,7 +147,7 @@ public class AuthorsPage extends AbstractPage{
     }
 
     public GroupsPage goToGroupsPage() {
-            WebDriverWait wait = new WebDriverWait(driver, 20);
+            WebDriverWait wait = new WebDriverWait(driver, 30);
             WebElement waitElement = wait.until(
                     ExpectedConditions.visibilityOfElementLocated(By.xpath("//li[@data-context='you']")));
 
@@ -156,8 +156,12 @@ public class AuthorsPage extends AbstractPage{
         WebElement we2 = driver.findElement(By.xpath("//li[@data-context='you']//a[@data-track='gnYouGroupsClick']"));
         action.moveToElement(we).moveToElement(we2).click().build().perform();
 
-            waitElement = wait.until(
-                    ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='group-actions']")));
+            try{
+                waitElement = wait.until(
+                        ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='group-actions']")));
+            }catch(TimeoutException te){
+                System.out.println("Can't found Groups... Try again...");
+            }
 
         return PageFactory.initElements(driver,GroupsPage.class);
     }
