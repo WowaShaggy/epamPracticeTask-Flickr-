@@ -1,8 +1,10 @@
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import pageObjects.*;
 
+@Listeners(GenerateReport.class)
 public class MainIndependent extends Conditions {
 
      @Test(description = "#2 Main page's title test")
