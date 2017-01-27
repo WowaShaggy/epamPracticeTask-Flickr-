@@ -53,7 +53,7 @@ public class ExplorePage extends AbstractPage {
     public String getImageTitle(int iC) {
         WebDriverWait wait = new WebDriverWait(driver, 20);
         WebElement waitElement = wait.until(
-                ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='view photo-list-view']/div["+iC+"]"))); // Для второй
+                ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[starts-with(@class,'view photo-list-view')]/div["+iC+"]"))); // Для второй
 
         return photosFrame.findElement(By.xpath("div["+iC+"]//a[@class='overlay']")).getAttribute("aria-label");
     }

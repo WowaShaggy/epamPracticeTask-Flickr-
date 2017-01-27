@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default Suite]">
+  <test name="epamPracticeTask-Flickr-(failed)">
+    <classes>
+      <class name="MainIndependent">
+        <methods>
+          <include name="prepare"/>
+          <include name="ExploreLinkAndPhotoTest"/>
+          <include name="LoginTest"/>
+          <include name="DetailsCameraTest"/>
+          <include name="cleanUp"/>
+          <include name="GalleriesTestURL"/>
+        </methods>
+      </class> <!-- MainIndependent -->
+    </classes>
+  </test> <!-- epamPracticeTask-Flickr-(failed) -->
+</suite> <!-- Failed suite [Default Suite] -->

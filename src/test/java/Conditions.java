@@ -1,15 +1,26 @@
 import factoryMethodPattern.ChromeDriverCreator;
 import factoryMethodPattern.FirefoxDriverCreator;
 import factoryMethodPattern.WebDriverCreator;
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
+import org.testng.ITestResult;
+import org.testng.Reporter;
+import org.testng.TestListenerAdapter;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import pageObjects.HomePage;
 import pageObjects.LoginPage;
 import pageObjects.YahooPage;
 
-public class Conditions {
+import java.io.File;
+import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+
+public class Conditions extends TestListenerAdapter {
 
     protected WebDriver driver;
     protected WebDriverCreator creator;
@@ -46,6 +57,26 @@ public class Conditions {
     @AfterTest(description = "WebDriver clean up")
     public void cleanUp(){
         //driver.close();
+    }
+
+    @Override
+    public void onTestFailure(ITestResult result) {
+        System.out.println("OOPs");
+        Calendar calendar = Calendar.getInstance();
+        SimpleDateFormat formater = new SimpleDateFormat("dd_MM_yyyy_hh_mm_ss");
+        String methodName = result.getName();
+        if (!result.isSuccess()) {
+            File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+            try {
+                String reportDirectory = new File(System.getProperty("user.dir")).getAbsolutePath() + "/target/surefire-reports";
+                File destFile = new File((String) reportDirectory + "/failure_screenshots/" + methodName + "_" + formater.format(calendar.getTime()) + ".png");
+                FileUtils.copyFile(scrFile, destFile);
+                Reporter.log("<a href='" + destFile.getAbsolutePath() + "'> <img src='" + destFile.getAbsolutePath() + "' height='1000' width='1000'/> </a>");
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+
+        }
     }
 
 }

@@ -4,7 +4,7 @@ import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import pageObjects.*;
 
-@Listeners(GenerateReport.class)
+@Listeners(Conditions.class)
 public class MainIndependent extends Conditions {
 
      @Test(description = "#2 Main page's title test")

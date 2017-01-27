@@ -31,9 +31,9 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>2.19.1</version>
                 <configuration>
-                    <suitexmlfiles>
-                        <suitexmlfile>testng.xml</suitexmlfile>
-                    </suitexmlfiles>
+                    <suiteXmlFiles>
+                        <suiteXmlFile>testng.xml</suiteXmlFile>
+                    </suiteXmlFiles>
                     <properties>
                         <property>
                             <name>listener</name>

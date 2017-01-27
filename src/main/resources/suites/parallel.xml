@@ -1,6 +1,11 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="parallelTest" parallel="tests" thread-count="2">
 
+
+    <listeners>
+        <listener class-name="Conditions" />
+    </listeners>
+
     <test name="flickr testing scenarios">
         <classes>
             <class name="MainIndependent">
@@ -8,11 +13,10 @@
         </classes>
     </test>
 
-    <test name="flickr testing scenarios 2">
+    <test name="2 flickr testing scenarios 2">
         <classes>
             <class name="MainIndependent">
             </class>
         </classes>
     </test>
-
 </suite>

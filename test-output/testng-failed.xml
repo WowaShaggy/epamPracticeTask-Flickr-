@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [parallelTest]" parallel="tests">
+  <listeners>
+    <listener class-name="Conditions"/>
+  </listeners>
+  <test name="2 flickr testing scenarios 2(failed)" parallel="tests">
+    <classes>
+      <class name="MainIndependent">
+        <methods>
+          <include name="prepare"/>
+          <include name="prepare"/>
+          <include name="ExploreLinkAndPhotoTest"/>
+          <include name="LoginTest"/>
+          <include name="LoginTest"/>
+          <include name="DetailsCameraTest"/>
+          <include name="cleanUp"/>
+          <include name="cleanUp"/>
+        </methods>
+      </class> <!-- MainIndependent -->
+    </classes>
+  </test> <!-- 2 flickr testing scenarios 2(failed) -->
+  <test name="flickr testing scenarios(failed)" parallel="tests">
+    <classes>
+      <class name="MainIndependent">
+        <methods>
+          <include name="prepare"/>
+          <include name="prepare"/>
+          <include name="ExploreLinkAndPhotoTest"/>
+          <include name="LoginTest"/>
+          <include name="LoginTest"/>
+          <include name="DetailsCameraTest"/>
+          <include name="cleanUp"/>
+          <include name="cleanUp"/>
+        </methods>
+      </class> <!-- MainIndependent -->
+    </classes>
+  </test> <!-- flickr testing scenarios(failed) -->
+</suite> <!-- Failed suite [parallelTest] -->
