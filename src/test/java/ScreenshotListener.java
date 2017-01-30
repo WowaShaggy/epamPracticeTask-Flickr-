@@ -4,16 +4,20 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.testng.ITestResult;
 import org.testng.Reporter;
-
+import org.testng.TestListenerAdapter;
 import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
-public class ScreenshotListener{
+public class ScreenshotListener extends TestListenerAdapter {
 
-   public void onTestFailure(ITestResult result, WebDriver driver) {
+    private static WebDriver driver;
 
+   @Override
+   public void onTestFailure(ITestResult result) {
+
+       driver = Conditions.driver;
          Calendar calendar = Calendar.getInstance();
         SimpleDateFormat formater = new SimpleDateFormat("dd_MM_yyyy_hh_mm_ss");
         String methodName = result.getName();
@@ -24,10 +28,11 @@ public class ScreenshotListener{
                 String reportDirectory = new File(System.getProperty("user.dir")).getAbsolutePath() + "/target/surefire-reports";
                 File destFile = new File((String) reportDirectory+"/failure_screenshots/"+methodName+"_"+formater.format(calendar.getTime())+".png");
                 FileUtils.copyFile(scrFile, destFile);
-                Reporter.log("<a href='"+ destFile.getAbsolutePath() + "'> <img src='"+ destFile.getAbsolutePath() + "' height='1000' width='1000'/> </a>");
+                Reporter.log("<a href='"+ destFile.getAbsolutePath() + "'> <img src='"+ destFile.getAbsolutePath() + "' height='100' width='100'/> </a>");
             } catch (IOException e) {
                 e.printStackTrace();
             }
         }
+
     }
 }

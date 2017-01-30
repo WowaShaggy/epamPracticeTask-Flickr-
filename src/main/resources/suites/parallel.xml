@@ -1,9 +1,9 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="parallelTest" parallel="tests" thread-count="2">
+<suite name="parallelTest" parallel="tests" thread-count="1">
 
 
     <listeners>
-        <listener class-name="Conditions" />
+        <listener class-name="ScreenshotListener" />
     </listeners>
 
     <test name="flickr testing scenarios">
@@ -12,11 +12,6 @@
             </class>
         </classes>
     </test>
+    
 
-    <test name="2 flickr testing scenarios 2">
-        <classes>
-            <class name="MainIndependent">
-            </class>
-        </classes>
-    </test>
 </suite>

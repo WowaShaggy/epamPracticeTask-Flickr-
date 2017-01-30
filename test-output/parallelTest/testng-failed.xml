@@ -2,38 +2,74 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [parallelTest]" parallel="tests">
   <listeners>
-    <listener class-name="Conditions"/>
+    <listener class-name="ScreenshotListener"/>
   </listeners>
-  <test name="2 flickr testing scenarios 2(failed)" parallel="tests">
-    <classes>
-      <class name="MainIndependent">
-        <methods>
-          <include name="prepare"/>
-          <include name="prepare"/>
-          <include name="ExploreLinkAndPhotoTest"/>
-          <include name="LoginTest"/>
-          <include name="LoginTest"/>
-          <include name="DetailsCameraTest"/>
-          <include name="cleanUp"/>
-          <include name="cleanUp"/>
-        </methods>
-      </class> <!-- MainIndependent -->
-    </classes>
-  </test> <!-- 2 flickr testing scenarios 2(failed) -->
   <test name="flickr testing scenarios(failed)" parallel="tests">
     <classes>
       <class name="MainIndependent">
         <methods>
+          <include name="GalleriesTestItems"/>
+          <include name="MainMenuItemsTest"/>
+          <include name="LoginTest"/>
+          <include name="LoginTest"/>
+          <include name="DetailsTitleTest"/>
+          <include name="DetailsCameraTest"/>
+          <include name="DetailsFollowTest"/>
+          <include name="MainPageTitleTest"/>
+          <include name="AuthorsLinkTest"/>
+          <include name="NavigateToDetailsTest"/>
+          <include name="SearchTestPhoto"/>
+          <include name="GroupsTestRecommendedGroups"/>
+          <include name="cleanUp"/>
+          <include name="DetailsRightsTest"/>
+          <include name="SubMenuItemsTest"/>
+          <include name="DetailsNumbersTest"/>
+          <include name="MainMenuItemsContTest"/>
+          <include name="YouLinkAndNameTest"/>
           <include name="prepare"/>
           <include name="prepare"/>
           <include name="ExploreLinkAndPhotoTest"/>
-          <include name="LoginTest"/>
-          <include name="LoginTest"/>
-          <include name="DetailsCameraTest"/>
-          <include name="cleanUp"/>
-          <include name="cleanUp"/>
+          <include name="AlbumTest"/>
+          <include name="DetailsTagsTest"/>
+          <include name="DetailsDateTest"/>
+          <include name="SearchTestUrl"/>
+          <include name="GroupsTestURL"/>
+          <include name="DetailsAuthorTest"/>
+          <include name="GalleriesTestURL"/>
         </methods>
       </class> <!-- MainIndependent -->
     </classes>
   </test> <!-- flickr testing scenarios(failed) -->
+  <test name="flickr testing scenarios 2(failed)" parallel="tests">
+    <classes>
+      <class name="MainIndependent">
+        <methods>
+          <include name="GalleriesTestItems"/>
+          <include name="DetailsNumbersTest"/>
+          <include name="MainMenuItemsContTest"/>
+          <include name="YouLinkAndNameTest"/>
+          <include name="MainMenuItemsTest"/>
+          <include name="LoginTest"/>
+          <include name="LoginTest"/>
+          <include name="DetailsTitleTest"/>
+          <include name="DetailsFollowTest"/>
+          <include name="MainPageTitleTest"/>
+          <include name="prepare"/>
+          <include name="prepare"/>
+          <include name="ExploreLinkAndPhotoTest"/>
+          <include name="DetailsTagsTest"/>
+          <include name="DetailsDateTest"/>
+          <include name="NavigateToDetailsTest"/>
+          <include name="SearchTestPhoto"/>
+          <include name="SearchTestUrl"/>
+          <include name="GroupsTestRecommendedGroups"/>
+          <include name="GroupsTestURL"/>
+          <include name="cleanUp"/>
+          <include name="DetailsRightsTest"/>
+          <include name="SubMenuItemsTest"/>
+          <include name="GalleriesTestURL"/>
+        </methods>
+      </class> <!-- MainIndependent -->
+    </classes>
+  </test> <!-- flickr testing scenarios 2(failed) -->
 </suite> <!-- Failed suite [parallelTest] -->

@@ -4,10 +4,10 @@ import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import pageObjects.*;
 
-@Listeners(Conditions.class)
+@Listeners(ScreenshotListener.class)
 public class MainIndependent extends Conditions {
 
-     @Test(description = "#2 Main page's title test")
+    @Test(description = "#2 Main page's title test")
     public void MainPageTitleTest() {
         System.out.println("test 2");
         driver.navigate().to(HomePage.HOME_PAGE_URL);
