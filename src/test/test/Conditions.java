@@ -11,7 +11,7 @@ import pageObjects.YahooPage;
 
 public class Conditions {
 
-    public static WebDriver driver;
+    protected WebDriver driver;
     protected WebDriverCreator creator;
     protected ConfigReader cr = new ConfigReader();
 
@@ -48,28 +48,8 @@ public class Conditions {
         //driver.close();
     }
 
-    public static WebDriver getWebDriver() {
+
+    public WebDriver getDriver() {
         return driver;
     }
-
-    /*
-    @Override
-    public void onTestFailure(ITestResult result) {
-        Calendar calendar = Calendar.getInstance();
-        SimpleDateFormat formater = new SimpleDateFormat("dd_MM_yyyy_hh_mm_ss");
-        String methodName = result.getName();
-        if (!result.isSuccess()) {
-            File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-            try {
-                String reportDirectory = new File(System.getProperty("user.dir")).getAbsolutePath() + "/target/surefire-reports";
-                File destFile = new File((String) reportDirectory + "/failure_screenshots/" + methodName + "_" + formater.format(calendar.getTime()) + ".png");
-                FileUtils.copyFile(scrFile, destFile);
-                Reporter.log("<a href='" + destFile.getAbsolutePath() + "'> <img src='" + destFile.getAbsolutePath() + "' height='1000' width='1000'/> </a>");
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-
-        }
-    }
-*/
 }

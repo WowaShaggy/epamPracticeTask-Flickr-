@@ -41,7 +41,6 @@ public class MainIndependent extends Conditions {
         System.out.println("test 4");
         driver.navigate().to(HomePage.HOME_PAGE_URL);
         HomePage homepage= PageFactory.initElements(driver,HomePage.class);
-
         Assert.assertEquals(homepage.subMenuLinks(), true,"Not each of Submenu items has link" );
     }
 
@@ -66,7 +65,7 @@ public class MainIndependent extends Conditions {
 
         System.out.println("Тестов пройдено:" + numberPassedTests + " из " + numberAllTests);
 
-        Assert.assertEquals(numberPassedTests, numberAllTests,"Not each photo passes test");
+        Assert.assertEquals(numberPassedTests, numberAllTests,"Not each photo passes test!");
     }
 
     @Test(description = "#7 Photo and its title navigate to the same page with other picture details")
@@ -202,7 +201,7 @@ public class MainIndependent extends Conditions {
         AuthorsPage authorsPage = detailspage.goToAuthorsPage();
         GroupsPage groupsPage = authorsPage.goToGroupsPage();
 
-        Assert.assertEquals(driver.getCurrentUrl(),groupsPage.GROUPS_PAGE_URL,"Can't found Groups Page");
+        Assert.assertEquals(driver.getCurrentUrl(),groupsPage.GROUPS_PAGE_URL,"Can't found Groups Page!");
     }
 
     @Test(description = "#11.2 Additional own testing scenarios ([You]->[Groups]). Check recommended group")
@@ -253,6 +252,5 @@ public class MainIndependent extends Conditions {
 
         Assert.assertEquals(searchPage.getFirstTitle().contains(searchRequest), true, "Your search returned incorrect results, possibly due Firefox!  ");
     }
-
 
 }

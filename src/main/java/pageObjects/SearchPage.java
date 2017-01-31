@@ -12,9 +12,8 @@ public class SearchPage extends AbstractPage {
     @FindBy(xpath = "//form[@method='GET']/input[@type='text']")
     public WebElement searchField;
 
-
-    @FindBy(xpath = "//input[@class='autosuggest-selectable-item no-outline']")
-    public WebElement loupeField;
+    @FindBy(xpath = "//div[@data-track='autosuggestNavigate_searchPhotos']")
+    public WebElement field;
 
     @FindBy(xpath = "//div[@class='search-box-container']//button[@type='submit']")
     public WebElement searchButton;
@@ -41,8 +40,14 @@ public class SearchPage extends AbstractPage {
             searchButton.click();
             System.out.println("Search from button");
         }catch(ElementNotVisibleException ex){
-            loupe.click();
-            System.out.println("Search from loupe");
+            try {
+                loupe.click();
+                System.out.println("Search from loupe");
+            }catch(WebDriverException e) {
+                field.click();
+                System.out.println("Search from field");
+
+            }
         }
 
         return this;
@@ -50,16 +55,22 @@ public class SearchPage extends AbstractPage {
 
     public String getFirstTitle() throws InterruptedException {
 
-        Thread.sleep(3000);
+        Thread.sleep(4000); // сюда бы JS
 
+        WebDriverWait wait = new WebDriverWait(driver, 20);
         try {
-            WebDriverWait wait = new WebDriverWait(driver, 20);
+
             WebElement waitElement = wait.until(
-                    ExpectedConditions.presenceOfElementLocated(By.xpath("//div[starts-with(@class,'main search-photos-results')]/div/div[2]/div[1]")));
+                    ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[starts-with(@class,'main search-photos-results')]/div/div[2]/div[1]")));
         }catch(TimeoutException eE){
             System.out.println("We can't navigate to necessary page");
         }
-
+        try {
+                WebElement waitElement = wait.until(
+                    ExpectedConditions.presenceOfElementLocated(By.xpath("//div[starts-with(@class,'main search-photos-results')]/div/div[2]/div[1]/div/div/a")));
+        }catch(TimeoutException eE){
+            System.out.println("We can't find to necessary photo");
+        }
         return driver.findElement(By.xpath("//div[starts-with(@class,'main search-photos-results')]/div/div[2]/div[1]/div/div/a")).getAttribute("aria-label");
     }
 }

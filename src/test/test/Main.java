@@ -1,4 +1,4 @@
-import factoryMethodPattern.ChromeDriverCreator;
+/*import factoryMethodPattern.ChromeDriverCreator;
 import factoryMethodPattern.FirefoxDriverCreator;
 import factoryMethodPattern.WebDriverCreator;
 import org.openqa.selenium.WebDriver;
@@ -87,7 +87,7 @@ public class Main {
     }
 
     @Test(description = "#6 [Explore]-link and checking photos with label '<photo_title> by <author>' ", priority = 6, enabled = true)
-    public void ExploreLinkAndPhotoTest() { //С этим тестом вопросы: имя автора не отображается в названии изображения, только ник
+    public void ExploreLinkAndPhotoTest() {
         System.out.println("test 6");
         PhotosPage photospage = PageFactory.initElements(driver,PhotosPage.class);
         ExplorePage explorepage = photospage.goToExploreLink();
@@ -100,7 +100,7 @@ public class Main {
     }
 
     @Test(description = "#7 Photo and its title navigate to the same page with other picture details", priority = 7)
-    public void NavigateToDetailsTest(){   /*для одной фотографии*/
+    public void NavigateToDetailsTest(){
         System.out.println("test 7");
         PhotosPage photospage = PageFactory.initElements(driver,PhotosPage.class); //На случай если тест 6 заблокирован
         ExplorePage explorepage = photospage.goToExploreLink();
@@ -254,3 +254,4 @@ public class Main {
     }
 
 }
+*/

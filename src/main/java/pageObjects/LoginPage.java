@@ -1,7 +1,5 @@
 package pageObjects;
 
-import org.openqa.selenium.NoSuchElementException;
-import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -21,7 +19,7 @@ public class LoginPage extends AbstractPage {
 
     public YahooPage loginClick(){
                                                                                         //// Часть написанная для отловли ошибки , не робит
-        boolean breakIt = true;
+       /* boolean breakIt = true;
         while (true) {
             breakIt = true;
             try {
@@ -40,9 +38,9 @@ public class LoginPage extends AbstractPage {
                 break;
             }
 
-        }
+        }*/
                                                                                          //// Часть написанная для отловли ошибки , не робит
-
+        loginButton.click();
         return PageFactory.initElements(driver,YahooPage.class);
     }
 

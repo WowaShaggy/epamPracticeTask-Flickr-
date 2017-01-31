@@ -161,8 +161,11 @@ public class AuthorsPage extends AbstractPage{
         action.moveToElement(we).moveToElement(we2).click().build().perform();
 
             try{
+                //waitElement = wait.until(
+                //        ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@class='group-actions']")));
                 waitElement = wait.until(
-                        ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@class='group-actions']")));
+                        ExpectedConditions.presenceOfElementLocated(By.xpath("//a[@data-action='createGroupClick']")));
+
             }catch(TimeoutException te){
                 System.out.println("Can't found Groups... Try again...");
             }

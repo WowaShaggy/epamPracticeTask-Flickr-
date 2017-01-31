@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.testng.ITestResult;
 import org.testng.Reporter;
 import org.testng.TestListenerAdapter;
+
 import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
@@ -12,18 +13,17 @@ import java.util.Calendar;
 
 public class ScreenshotListener extends TestListenerAdapter {
 
-    private static WebDriver driver;
-
    @Override
    public void onTestFailure(ITestResult result) {
+       Object currentClass = result.getInstance();
+       WebDriver webDriver = ((Conditions) currentClass).getDriver();
 
-       driver = Conditions.driver;
-         Calendar calendar = Calendar.getInstance();
+        Calendar calendar = Calendar.getInstance();
         SimpleDateFormat formater = new SimpleDateFormat("dd_MM_yyyy_hh_mm_ss");
         String methodName = result.getName();
         if(!result.isSuccess()){
 
-            File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+            File scrFile = ((TakesScreenshot) webDriver).getScreenshotAs(OutputType.FILE);
             try {
                 String reportDirectory = new File(System.getProperty("user.dir")).getAbsolutePath() + "/target/surefire-reports";
                 File destFile = new File((String) reportDirectory+"/failure_screenshots/"+methodName+"_"+formater.format(calendar.getTime())+".png");

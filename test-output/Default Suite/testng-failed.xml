@@ -8,9 +8,7 @@
           <include name="prepare"/>
           <include name="ExploreLinkAndPhotoTest"/>
           <include name="LoginTest"/>
-          <include name="DetailsCameraTest"/>
           <include name="cleanUp"/>
-          <include name="GalleriesTestURL"/>
         </methods>
       </class> <!-- MainIndependent -->
     </classes>
