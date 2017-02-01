@@ -21,12 +21,12 @@ public class ScreenshotListener extends TestListenerAdapter {
         Calendar calendar = Calendar.getInstance();
         SimpleDateFormat formater = new SimpleDateFormat("dd_MM_yyyy_hh_mm_ss");
         String methodName = result.getName();
-        if(!result.isSuccess()){
+        String testName = result.getTestName();
 
             File scrFile = ((TakesScreenshot) webDriver).getScreenshotAs(OutputType.FILE);
             try {
                 String reportDirectory = new File(System.getProperty("user.dir")).getAbsolutePath() + "/target/surefire-reports";
-                File destFile = new File((String) reportDirectory+"/failure_screenshots/"+methodName+"_"+formater.format(calendar.getTime())+".png");
+                File destFile = new File((String) reportDirectory+"/failure_screenshots/"+methodName+"_"+testName+"_"+formater.format(calendar.getTime())+".png");
                 FileUtils.copyFile(scrFile, destFile);
                 Reporter.log("<a href='"+ destFile.getAbsolutePath() + "'> <img src='"+ destFile.getAbsolutePath() + "' height='100' width='100'/> </a>");
             } catch (IOException e) {
@@ -35,4 +35,5 @@ public class ScreenshotListener extends TestListenerAdapter {
         }
 
     }
-}
+
+

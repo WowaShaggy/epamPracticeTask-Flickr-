@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Parameters;
 import pageObjects.HomePage;
 import pageObjects.LoginPage;
 import pageObjects.YahooPage;
@@ -16,9 +17,10 @@ public class Conditions {
     protected ConfigReader cr = new ConfigReader();
 
     @BeforeTest(description = "WebDriver init")
-    public void prepare() {
+    @Parameters("browzer")
+    public void prepare(String browzer) {
 
-        switch (cr.Data("browzer")) {
+        switch (browzer) {
             case "Firefox": {
                 creator = new FirefoxDriverCreator();
                 driver = creator.factoryMethod();break;

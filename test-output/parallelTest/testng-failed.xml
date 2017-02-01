@@ -5,6 +5,7 @@
     <listener class-name="ScreenshotListener"/>
   </listeners>
   <test name="flickr testing scenarios(failed)" parallel="tests">
+    <parameter name="browzer" value="Chrome"/>
     <classes>
       <class name="MainIndependent">
         <methods>
@@ -13,7 +14,6 @@
           <include name="ExploreLinkAndPhotoTest"/>
           <include name="LoginTest"/>
           <include name="LoginTest"/>
-          <include name="SearchTestPhoto"/>
           <include name="cleanUp"/>
           <include name="cleanUp"/>
         </methods>
@@ -21,6 +21,7 @@
     </classes>
   </test> <!-- flickr testing scenarios(failed) -->
   <test name="flickr testing scenarios 2(failed)" parallel="tests">
+    <parameter name="browzer" value="Firefox"/>
     <classes>
       <class name="MainIndependent">
         <methods>

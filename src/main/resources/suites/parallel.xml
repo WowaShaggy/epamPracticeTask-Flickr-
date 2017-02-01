@@ -6,7 +6,9 @@
         <listener class-name="ScreenshotListener" />
     </listeners>
 
+
     <test name="flickr testing scenarios">
+        <parameter name="browzer" value="Chrome"/>
         <classes>
             <class name="MainIndependent">
             </class>
@@ -14,11 +16,13 @@
     </test>
 
     <test name="flickr testing scenarios 2">
+        <parameter name="browzer" value="Firefox"/>
         <classes>
             <class name="MainIndependent">
             </class>
         </classes>
     </test>
+
 
 
 </suite>

@@ -41,6 +41,7 @@ public class MainIndependent extends Conditions {
         System.out.println("test 4");
         driver.navigate().to(HomePage.HOME_PAGE_URL);
         HomePage homepage= PageFactory.initElements(driver,HomePage.class);
+
         Assert.assertEquals(homepage.subMenuLinks(), true,"Not each of Submenu items has link" );
     }
 
@@ -132,7 +133,6 @@ public class MainIndependent extends Conditions {
         ExplorePage explorepage = PageFactory.initElements(driver,ExplorePage.class);
         DetailsPage detailspage = explorepage.getDetailsURLfromPhoto();
 
-
         Assert.assertTrue(detailspage.getDatePhoto());
     }
 
@@ -179,7 +179,7 @@ public class MainIndependent extends Conditions {
     }
 
     @Test(description = "#10 Every Album has a thumbnail, title, link and a number of photos and views ")
-    public void AlbumTest() throws InterruptedException {
+        public void AlbumTest() throws InterruptedException {
         System.out.println("test 10");
         driver.navigate().to(ExplorePage.EXPLORE_PAGE_URL);
         ExplorePage explorepage = PageFactory.initElements(driver,ExplorePage.class);
