@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="org.jbehave.site:jbehave-site-resources:2.0.2" type="repository">
+    <properties maven-id="org.jbehave.site:jbehave-site-resources:2.0.2" />
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/jbehave/site/jbehave-site-resources/2.0.2/jbehave-site-resources-2.0.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

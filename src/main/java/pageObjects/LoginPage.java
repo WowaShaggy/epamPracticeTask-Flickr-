@@ -18,28 +18,6 @@ public class LoginPage extends AbstractPage {
     }
 
     public YahooPage loginClick(){
-                                                                                        //// Часть написанная для отловли ошибки , не робит
-       /* boolean breakIt = true;
-        while (true) {
-            breakIt = true;
-            try {
-                loginButton.click();
-            } catch (NoSuchElementException e) {
-                if (e.getMessage().contains("no such element")) {
-                    breakIt = false;
-                }
-            }
-               catch (StaleElementReferenceException e) {
-                if (e.getMessage().contains("stale element reference")) {
-                    breakIt = false;
-                }
-            }
-            if (breakIt) {
-                break;
-            }
-
-        }*/
-                                                                                         //// Часть написанная для отловли ошибки , не робит
         loginButton.click();
         return PageFactory.initElements(driver,YahooPage.class);
     }

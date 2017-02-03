@@ -2,30 +2,30 @@
 <testng-results skipped="0" failed="3" ignored="0" total="46" passed="43">
   <reporter-output>
     <line>
-      <![CDATA[<a href='C:\Users\Uladzimir_Papeka\IdeaProjects\EPAM\epamPracticeTask-Flickr-\target\surefire-reports\failure_screenshots\ExploreLinkAndPhotoTest_null_01_02_2017_11_08_50.png'> <img src='C:\Users\Uladzimir_Papeka\IdeaProjects\EPAM\epamPracticeTask-Flickr-\target\surefire-reports\failure_screenshots\ExploreLinkAndPhotoTest_null_01_02_2017_11_08_50.png' height='100' width='100'/> </a>]]>
+      <![CDATA[<a href='C:\Users\Uladzimir_Papeka\IdeaProjects\EPAM\epamPracticeTask-Flickr-\target\surefire-reports\failure_screenshots\ExploreLinkAndPhotoTest_null_02_02_2017_01_59_05.png'> <img src='C:\Users\Uladzimir_Papeka\IdeaProjects\EPAM\epamPracticeTask-Flickr-\target\surefire-reports\failure_screenshots\ExploreLinkAndPhotoTest_null_02_02_2017_01_59_05.png' height='100' width='100'/> </a>]]>
     </line>
     <line>
-      <![CDATA[<a href='C:\Users\Uladzimir_Papeka\IdeaProjects\EPAM\epamPracticeTask-Flickr-\target\surefire-reports\failure_screenshots\ExploreLinkAndPhotoTest_null_01_02_2017_11_08_52.png'> <img src='C:\Users\Uladzimir_Papeka\IdeaProjects\EPAM\epamPracticeTask-Flickr-\target\surefire-reports\failure_screenshots\ExploreLinkAndPhotoTest_null_01_02_2017_11_08_52.png' height='100' width='100'/> </a>]]>
+      <![CDATA[<a href='C:\Users\Uladzimir_Papeka\IdeaProjects\EPAM\epamPracticeTask-Flickr-\target\surefire-reports\failure_screenshots\ExploreLinkAndPhotoTest_null_02_02_2017_01_59_07.png'> <img src='C:\Users\Uladzimir_Papeka\IdeaProjects\EPAM\epamPracticeTask-Flickr-\target\surefire-reports\failure_screenshots\ExploreLinkAndPhotoTest_null_02_02_2017_01_59_07.png' height='100' width='100'/> </a>]]>
     </line>
     <line>
-      <![CDATA[<a href='C:\Users\Uladzimir_Papeka\IdeaProjects\EPAM\epamPracticeTask-Flickr-\target\surefire-reports\failure_screenshots\ExploreLinkAndPhotoTest_null_01_02_2017_11_10_01.png'> <img src='C:\Users\Uladzimir_Papeka\IdeaProjects\EPAM\epamPracticeTask-Flickr-\target\surefire-reports\failure_screenshots\ExploreLinkAndPhotoTest_null_01_02_2017_11_10_01.png' height='100' width='100'/> </a>]]>
+      <![CDATA[<a href='C:\Users\Uladzimir_Papeka\IdeaProjects\EPAM\epamPracticeTask-Flickr-\target\surefire-reports\failure_screenshots\ExploreLinkAndPhotoTest_null_02_02_2017_02_00_04.png'> <img src='C:\Users\Uladzimir_Papeka\IdeaProjects\EPAM\epamPracticeTask-Flickr-\target\surefire-reports\failure_screenshots\ExploreLinkAndPhotoTest_null_02_02_2017_02_00_04.png' height='100' width='100'/> </a>]]>
     </line>
     <line>
-      <![CDATA[<a href='C:\Users\Uladzimir_Papeka\IdeaProjects\EPAM\epamPracticeTask-Flickr-\target\surefire-reports\failure_screenshots\ExploreLinkAndPhotoTest_null_01_02_2017_11_10_18.png'> <img src='C:\Users\Uladzimir_Papeka\IdeaProjects\EPAM\epamPracticeTask-Flickr-\target\surefire-reports\failure_screenshots\ExploreLinkAndPhotoTest_null_01_02_2017_11_10_18.png' height='100' width='100'/> </a>]]>
+      <![CDATA[<a href='C:\Users\Uladzimir_Papeka\IdeaProjects\EPAM\epamPracticeTask-Flickr-\target\surefire-reports\failure_screenshots\ExploreLinkAndPhotoTest_null_02_02_2017_02_00_13.png'> <img src='C:\Users\Uladzimir_Papeka\IdeaProjects\EPAM\epamPracticeTask-Flickr-\target\surefire-reports\failure_screenshots\ExploreLinkAndPhotoTest_null_02_02_2017_02_00_13.png' height='100' width='100'/> </a>]]>
     </line>
     <line>
-      <![CDATA[<a href='C:\Users\Uladzimir_Papeka\IdeaProjects\EPAM\epamPracticeTask-Flickr-\target\surefire-reports\failure_screenshots\SearchTestPhoto_null_01_02_2017_11_11_51.png'> <img src='C:\Users\Uladzimir_Papeka\IdeaProjects\EPAM\epamPracticeTask-Flickr-\target\surefire-reports\failure_screenshots\SearchTestPhoto_null_01_02_2017_11_11_51.png' height='100' width='100'/> </a>]]>
+      <![CDATA[<a href='C:\Users\Uladzimir_Papeka\IdeaProjects\EPAM\epamPracticeTask-Flickr-\target\surefire-reports\failure_screenshots\SearchTestPhoto_null_02_02_2017_02_01_32.png'> <img src='C:\Users\Uladzimir_Papeka\IdeaProjects\EPAM\epamPracticeTask-Flickr-\target\surefire-reports\failure_screenshots\SearchTestPhoto_null_02_02_2017_02_01_32.png' height='100' width='100'/> </a>]]>
     </line>
     <line>
-      <![CDATA[<a href='C:\Users\Uladzimir_Papeka\IdeaProjects\EPAM\epamPracticeTask-Flickr-\target\surefire-reports\failure_screenshots\SearchTestPhoto_null_01_02_2017_11_11_51.png'> <img src='C:\Users\Uladzimir_Papeka\IdeaProjects\EPAM\epamPracticeTask-Flickr-\target\surefire-reports\failure_screenshots\SearchTestPhoto_null_01_02_2017_11_11_51.png' height='100' width='100'/> </a>]]>
+      <![CDATA[<a href='C:\Users\Uladzimir_Papeka\IdeaProjects\EPAM\epamPracticeTask-Flickr-\target\surefire-reports\failure_screenshots\SearchTestPhoto_null_02_02_2017_02_01_32.png'> <img src='C:\Users\Uladzimir_Papeka\IdeaProjects\EPAM\epamPracticeTask-Flickr-\target\surefire-reports\failure_screenshots\SearchTestPhoto_null_02_02_2017_02_01_32.png' height='100' width='100'/> </a>]]>
     </line>
   </reporter-output>
-  <suite name="parallelTest" duration-ms="336134" started-at="2017-02-01T08:06:39Z" finished-at="2017-02-01T08:12:15Z">
+  <suite name="parallelTest" duration-ms="264746" started-at="2017-02-02T10:57:29Z" finished-at="2017-02-02T11:01:53Z">
     <groups>
     </groups>
-    <test name="flickr testing scenarios" duration-ms="183730" started-at="2017-02-01T08:06:39Z" finished-at="2017-02-01T08:09:43Z">
+    <test name="flickr testing scenarios" duration-ms="170759" started-at="2017-02-02T10:57:29Z" finished-at="2017-02-02T11:00:19Z">
       <class name="MainIndependent">
-        <test-method status="PASS" signature="prepare(java.lang.String)[pri:0, instance:MainIndependent@5594a1b5]" name="prepare" is-config="true" duration-ms="2738" started-at="2017-02-01T11:06:39Z" description="WebDriver init" finished-at="2017-02-01T11:06:42Z">
+        <test-method status="PASS" signature="prepare(java.lang.String)[pri:0, instance:MainIndependent@59a6e353]" name="prepare" is-config="true" duration-ms="2601" started-at="2017-02-02T13:57:29Z" description="WebDriver init" finished-at="2017-02-02T13:57:31Z">
           <params>
             <param index="0">
               <value>
@@ -36,57 +36,57 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- prepare -->
-        <test-method name="LoginTest" signature="LoginTest()[pri:0, instance:MainIndependent@5594a1b5]" is-config="true" status="PASS" duration-ms="17568" finished-at="2017-02-01T11:07:00Z" started-at="2017-02-01T11:06:42Z" depends-on-methods="Conditions.prepare" description="#1 Flickr login test">
+        <test-method name="LoginTest" signature="LoginTest()[pri:0, instance:MainIndependent@59a6e353]" is-config="true" status="PASS" duration-ms="16068" finished-at="2017-02-02T13:57:47Z" started-at="2017-02-02T13:57:31Z" depends-on-methods="Conditions.prepare" description="#1 Flickr login test">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginTest -->
-        <test-method status="PASS" signature="AlbumTest()[pri:0, instance:MainIndependent@5594a1b5]" name="AlbumTest" duration-ms="42278" started-at="2017-02-01T11:07:00Z" description="#10 Every Album has a thumbnail, title, link and a number of photos and views " finished-at="2017-02-01T11:07:42Z">
+        <test-method status="PASS" signature="AlbumTest()[pri:0, instance:MainIndependent@59a6e353]" name="AlbumTest" duration-ms="32140" started-at="2017-02-02T13:57:47Z" description="#10 Every Album has a thumbnail, title, link and a number of photos and views " finished-at="2017-02-02T13:58:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AlbumTest -->
-        <test-method status="PASS" signature="AuthorsLinkTest()[pri:0, instance:MainIndependent@5594a1b5]" name="AuthorsLinkTest" duration-ms="5960" started-at="2017-02-01T11:07:42Z" description="#9 Author’s name navigates to the page with author’s photostream" finished-at="2017-02-01T11:07:48Z">
+        <test-method status="PASS" signature="AuthorsLinkTest()[pri:0, instance:MainIndependent@59a6e353]" name="AuthorsLinkTest" duration-ms="5210" started-at="2017-02-02T13:58:19Z" description="#9 Author’s name navigates to the page with author’s photostream" finished-at="2017-02-02T13:58:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AuthorsLinkTest -->
-        <test-method status="PASS" signature="DetailsAuthorTest()[pri:0, instance:MainIndependent@5594a1b5]" name="DetailsAuthorTest" duration-ms="4649" started-at="2017-02-01T11:07:48Z" description="#8.1.2 Page with photo details contains every all necessary items (Author)" finished-at="2017-02-01T11:07:52Z">
+        <test-method status="PASS" signature="DetailsAuthorTest()[pri:0, instance:MainIndependent@59a6e353]" name="DetailsAuthorTest" duration-ms="3256" started-at="2017-02-02T13:58:25Z" description="#8.1.2 Page with photo details contains every all necessary items (Author)" finished-at="2017-02-02T13:58:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DetailsAuthorTest -->
-        <test-method status="PASS" signature="DetailsCameraTest()[pri:0, instance:MainIndependent@5594a1b5]" name="DetailsCameraTest" duration-ms="6528" started-at="2017-02-01T11:07:52Z" description="#8.6 Page with photo details contains every all necessary items (Camera)" finished-at="2017-02-01T11:07:59Z">
+        <test-method status="PASS" signature="DetailsCameraTest()[pri:0, instance:MainIndependent@59a6e353]" name="DetailsCameraTest" duration-ms="3419" started-at="2017-02-02T13:58:28Z" description="#8.6 Page with photo details contains every all necessary items (Camera)" finished-at="2017-02-02T13:58:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DetailsCameraTest -->
-        <test-method status="PASS" signature="DetailsDateTest()[pri:0, instance:MainIndependent@5594a1b5]" name="DetailsDateTest" duration-ms="3915" started-at="2017-02-01T11:07:59Z" description="#8.4 Page with photo details contains every all necessary items (Date of photo)" finished-at="2017-02-01T11:08:03Z">
+        <test-method status="PASS" signature="DetailsDateTest()[pri:0, instance:MainIndependent@59a6e353]" name="DetailsDateTest" duration-ms="3288" started-at="2017-02-02T13:58:31Z" description="#8.4 Page with photo details contains every all necessary items (Date of photo)" finished-at="2017-02-02T13:58:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DetailsDateTest -->
-        <test-method status="PASS" signature="DetailsFollowTest()[pri:0, instance:MainIndependent@5594a1b5]" name="DetailsFollowTest" duration-ms="3771" started-at="2017-02-01T11:08:03Z" description="#8.2 Page with photo details contains every all necessary items (Follow-button)" finished-at="2017-02-01T11:08:07Z">
+        <test-method status="PASS" signature="DetailsFollowTest()[pri:0, instance:MainIndependent@59a6e353]" name="DetailsFollowTest" duration-ms="3679" started-at="2017-02-02T13:58:35Z" description="#8.2 Page with photo details contains every all necessary items (Follow-button)" finished-at="2017-02-02T13:58:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DetailsFollowTest -->
-        <test-method status="PASS" signature="DetailsNumbersTest()[pri:0, instance:MainIndependent@5594a1b5]" name="DetailsNumbersTest" duration-ms="4592" started-at="2017-02-01T11:08:07Z" description="#8.3 Page with photo details contains every all necessary items (number of views, faves, comments)" finished-at="2017-02-01T11:08:11Z">
+        <test-method status="PASS" signature="DetailsNumbersTest()[pri:0, instance:MainIndependent@59a6e353]" name="DetailsNumbersTest" duration-ms="3599" started-at="2017-02-02T13:58:38Z" description="#8.3 Page with photo details contains every all necessary items (number of views, faves, comments)" finished-at="2017-02-02T13:58:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DetailsNumbersTest -->
-        <test-method status="PASS" signature="DetailsRightsTest()[pri:0, instance:MainIndependent@5594a1b5]" name="DetailsRightsTest" duration-ms="4995" started-at="2017-02-01T11:08:11Z" description="#8.5 Page with photo details contains every all necessary items (Rights link)" finished-at="2017-02-01T11:08:16Z">
+        <test-method status="PASS" signature="DetailsRightsTest()[pri:0, instance:MainIndependent@59a6e353]" name="DetailsRightsTest" duration-ms="3222" started-at="2017-02-02T13:58:42Z" description="#8.5 Page with photo details contains every all necessary items (Rights link)" finished-at="2017-02-02T13:58:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DetailsRightsTest -->
-        <test-method status="PASS" signature="DetailsTagsTest()[pri:0, instance:MainIndependent@5594a1b5]" name="DetailsTagsTest" duration-ms="4435" started-at="2017-02-01T11:08:16Z" description="#8.7 Page with photo details contains every all necessary items (Tags)" finished-at="2017-02-01T11:08:21Z">
+        <test-method status="PASS" signature="DetailsTagsTest()[pri:0, instance:MainIndependent@59a6e353]" name="DetailsTagsTest" duration-ms="3538" started-at="2017-02-02T13:58:45Z" description="#8.7 Page with photo details contains every all necessary items (Tags)" finished-at="2017-02-02T13:58:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DetailsTagsTest -->
-        <test-method status="PASS" signature="DetailsTitleTest()[pri:0, instance:MainIndependent@5594a1b5]" name="DetailsTitleTest" duration-ms="4005" started-at="2017-02-01T11:08:21Z" description="#8.1.1 Page with photo details contains every all necessary items (Title)" finished-at="2017-02-01T11:08:25Z">
+        <test-method status="PASS" signature="DetailsTitleTest()[pri:0, instance:MainIndependent@59a6e353]" name="DetailsTitleTest" duration-ms="3282" started-at="2017-02-02T13:58:49Z" description="#8.1.1 Page with photo details contains every all necessary items (Title)" finished-at="2017-02-02T13:58:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DetailsTitleTest -->
-        <test-method status="FAIL" signature="ExploreLinkAndPhotoTest()[pri:0, instance:MainIndependent@5594a1b5]" name="ExploreLinkAndPhotoTest" duration-ms="25510" started-at="2017-02-01T11:08:25Z" description="#6 [Explore]-link and checking photos with label &#039;&lt;photo_title&gt; by &lt;author&gt;&#039; " finished-at="2017-02-01T11:08:50Z">
+        <test-method status="FAIL" signature="ExploreLinkAndPhotoTest()[pri:0, instance:MainIndependent@59a6e353]" name="ExploreLinkAndPhotoTest" duration-ms="13467" started-at="2017-02-02T13:58:52Z" description="#6 [Explore]-link and checking photos with label &#039;&lt;photo_title&gt; by &lt;author&gt;&#039; " finished-at="2017-02-02T13:59:05Z">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[Not each photo passes test! expected [97] but found [34]]]>
+              <![CDATA[Not each photo passes test! expected [50] but found [20]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Not each photo passes test! expected [97] but found [34]
+              <![CDATA[java.lang.AssertionError: Not each photo passes test! expected [50] but found [20]
 	at org.testng.Assert.fail(Assert.java:94)
 	at org.testng.Assert.failNotEquals(Assert.java:513)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
@@ -118,70 +118,70 @@
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
             <line>
-              <![CDATA[<a href='C:\Users\Uladzimir_Papeka\IdeaProjects\EPAM\epamPracticeTask-Flickr-\target\surefire-reports\failure_screenshots\ExploreLinkAndPhotoTest_null_01_02_2017_11_08_50.png'> <img src='C:\Users\Uladzimir_Papeka\IdeaProjects\EPAM\epamPracticeTask-Flickr-\target\surefire-reports\failure_screenshots\ExploreLinkAndPhotoTest_null_01_02_2017_11_08_50.png' height='100' width='100'/> </a>]]>
+              <![CDATA[<a href='C:\Users\Uladzimir_Papeka\IdeaProjects\EPAM\epamPracticeTask-Flickr-\target\surefire-reports\failure_screenshots\ExploreLinkAndPhotoTest_null_02_02_2017_01_59_05.png'> <img src='C:\Users\Uladzimir_Papeka\IdeaProjects\EPAM\epamPracticeTask-Flickr-\target\surefire-reports\failure_screenshots\ExploreLinkAndPhotoTest_null_02_02_2017_01_59_05.png' height='100' width='100'/> </a>]]>
             </line>
             <line>
-              <![CDATA[<a href='C:\Users\Uladzimir_Papeka\IdeaProjects\EPAM\epamPracticeTask-Flickr-\target\surefire-reports\failure_screenshots\ExploreLinkAndPhotoTest_null_01_02_2017_11_08_52.png'> <img src='C:\Users\Uladzimir_Papeka\IdeaProjects\EPAM\epamPracticeTask-Flickr-\target\surefire-reports\failure_screenshots\ExploreLinkAndPhotoTest_null_01_02_2017_11_08_52.png' height='100' width='100'/> </a>]]>
+              <![CDATA[<a href='C:\Users\Uladzimir_Papeka\IdeaProjects\EPAM\epamPracticeTask-Flickr-\target\surefire-reports\failure_screenshots\ExploreLinkAndPhotoTest_null_02_02_2017_01_59_07.png'> <img src='C:\Users\Uladzimir_Papeka\IdeaProjects\EPAM\epamPracticeTask-Flickr-\target\surefire-reports\failure_screenshots\ExploreLinkAndPhotoTest_null_02_02_2017_01_59_07.png' height='100' width='100'/> </a>]]>
             </line>
           </reporter-output>
         </test-method> <!-- ExploreLinkAndPhotoTest -->
-        <test-method status="PASS" signature="GalleriesTestItems()[pri:0, instance:MainIndependent@5594a1b5]" name="GalleriesTestItems" duration-ms="2823" started-at="2017-02-01T11:08:53Z" description="#12.2 Additional own testing scenarios ([Explore]-&gt;[Galleries]). Check gallery&#039;s items" finished-at="2017-02-01T11:08:56Z">
+        <test-method status="PASS" signature="GalleriesTestItems()[pri:0, instance:MainIndependent@59a6e353]" name="GalleriesTestItems" duration-ms="9537" started-at="2017-02-02T13:59:08Z" description="#12.2 Additional own testing scenarios ([Explore]-&gt;[Galleries]). Check gallery&#039;s items" finished-at="2017-02-02T13:59:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- GalleriesTestItems -->
-        <test-method status="PASS" signature="GalleriesTestURL()[pri:0, instance:MainIndependent@5594a1b5]" name="GalleriesTestURL" duration-ms="3662" started-at="2017-02-01T11:08:56Z" description="#12.1 Additional own testing scenarios ([Explore]-&gt;[Galleries]). Check Url" finished-at="2017-02-01T11:08:59Z">
+        <test-method status="PASS" signature="GalleriesTestURL()[pri:0, instance:MainIndependent@59a6e353]" name="GalleriesTestURL" duration-ms="8907" started-at="2017-02-02T13:59:18Z" description="#12.1 Additional own testing scenarios ([Explore]-&gt;[Galleries]). Check Url" finished-at="2017-02-02T13:59:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- GalleriesTestURL -->
-        <test-method status="PASS" signature="GroupsTestRecommendedGroups()[pri:0, instance:MainIndependent@5594a1b5]" name="GroupsTestRecommendedGroups" duration-ms="3410" started-at="2017-02-01T11:08:59Z" description="#11.2 Additional own testing scenarios ([You]-&gt;[Groups]). Check recommended group" finished-at="2017-02-01T11:09:03Z">
+        <test-method status="PASS" signature="GroupsTestRecommendedGroups()[pri:0, instance:MainIndependent@59a6e353]" name="GroupsTestRecommendedGroups" duration-ms="4555" started-at="2017-02-02T13:59:27Z" description="#11.2 Additional own testing scenarios ([You]-&gt;[Groups]). Check recommended group" finished-at="2017-02-02T13:59:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- GroupsTestRecommendedGroups -->
-        <test-method status="PASS" signature="GroupsTestURL()[pri:0, instance:MainIndependent@5594a1b5]" name="GroupsTestURL" duration-ms="6038" started-at="2017-02-01T11:09:03Z" description="#11.1 Additional own testing scenarios ([You]-&gt;[Groups]). Check Url" finished-at="2017-02-01T11:09:09Z">
+        <test-method status="PASS" signature="GroupsTestURL()[pri:0, instance:MainIndependent@59a6e353]" name="GroupsTestURL" duration-ms="7696" started-at="2017-02-02T13:59:31Z" description="#11.1 Additional own testing scenarios ([You]-&gt;[Groups]). Check Url" finished-at="2017-02-02T13:59:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- GroupsTestURL -->
-        <test-method status="PASS" signature="MainMenuItemsContTest()[pri:0, instance:MainIndependent@5594a1b5]" name="MainMenuItemsContTest" duration-ms="2823" started-at="2017-02-01T11:09:09Z" description="#3.1 Main menu items count test" finished-at="2017-02-01T11:09:12Z">
+        <test-method status="PASS" signature="MainMenuItemsContTest()[pri:0, instance:MainIndependent@59a6e353]" name="MainMenuItemsContTest" duration-ms="2615" started-at="2017-02-02T13:59:39Z" description="#3.1 Main menu items count test" finished-at="2017-02-02T13:59:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- MainMenuItemsContTest -->
-        <test-method status="PASS" signature="MainMenuItemsTest()[pri:0, instance:MainIndependent@5594a1b5]" name="MainMenuItemsTest" duration-ms="3238" started-at="2017-02-01T11:09:12Z" description="#3.2 Main menu items test" finished-at="2017-02-01T11:09:15Z">
+        <test-method status="PASS" signature="MainMenuItemsTest()[pri:0, instance:MainIndependent@59a6e353]" name="MainMenuItemsTest" duration-ms="3003" started-at="2017-02-02T13:59:41Z" description="#3.2 Main menu items test" finished-at="2017-02-02T13:59:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- MainMenuItemsTest -->
-        <test-method status="PASS" signature="MainPageTitleTest()[pri:0, instance:MainIndependent@5594a1b5]" name="MainPageTitleTest" duration-ms="2376" started-at="2017-02-01T11:09:15Z" description="#2 Main page&#039;s title test" finished-at="2017-02-01T11:09:17Z">
+        <test-method status="PASS" signature="MainPageTitleTest()[pri:0, instance:MainIndependent@59a6e353]" name="MainPageTitleTest" duration-ms="3555" started-at="2017-02-02T13:59:44Z" description="#2 Main page&#039;s title test" finished-at="2017-02-02T13:59:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- MainPageTitleTest -->
-        <test-method status="PASS" signature="NavigateToDetailsTest()[pri:0, instance:MainIndependent@5594a1b5]" name="NavigateToDetailsTest" duration-ms="5800" started-at="2017-02-01T11:09:17Z" description="#7 Photo and its title navigate to the same page with other picture details" finished-at="2017-02-01T11:09:23Z">
+        <test-method status="PASS" signature="NavigateToDetailsTest()[pri:0, instance:MainIndependent@59a6e353]" name="NavigateToDetailsTest" duration-ms="7792" started-at="2017-02-02T13:59:48Z" description="#7 Photo and its title navigate to the same page with other picture details" finished-at="2017-02-02T13:59:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- NavigateToDetailsTest -->
-        <test-method status="PASS" signature="SearchTestPhoto()[pri:0, instance:MainIndependent@5594a1b5]" name="SearchTestPhoto" duration-ms="8290" started-at="2017-02-01T11:09:23Z" description="#13.2 Additional own testing scenarios (Search functionality). Search Photo" finished-at="2017-02-01T11:09:31Z">
+        <test-method status="PASS" signature="SearchTestPhoto()[pri:0, instance:MainIndependent@59a6e353]" name="SearchTestPhoto" duration-ms="9821" started-at="2017-02-02T13:59:56Z" description="#13.2 Additional own testing scenarios (Search functionality). Search Photo" finished-at="2017-02-02T14:00:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SearchTestPhoto -->
-        <test-method status="PASS" signature="SearchTestUrl()[pri:0, instance:MainIndependent@5594a1b5]" name="SearchTestUrl" duration-ms="2724" started-at="2017-02-01T11:09:31Z" description="#13.1 Additional own testing scenarios (Search functionality). Search Url" finished-at="2017-02-01T11:09:34Z">
+        <test-method status="PASS" signature="SearchTestUrl()[pri:0, instance:MainIndependent@59a6e353]" name="SearchTestUrl" duration-ms="6158" started-at="2017-02-02T14:00:06Z" description="#13.1 Additional own testing scenarios (Search functionality). Search Url" finished-at="2017-02-02T14:00:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SearchTestUrl -->
-        <test-method status="PASS" signature="SubMenuItemsTest()[pri:0, instance:MainIndependent@5594a1b5]" name="SubMenuItemsTest" duration-ms="4436" started-at="2017-02-01T11:09:34Z" description="#4 Sub-menu items contain items" finished-at="2017-02-01T11:09:39Z">
+        <test-method status="PASS" signature="SubMenuItemsTest()[pri:0, instance:MainIndependent@59a6e353]" name="SubMenuItemsTest" duration-ms="2390" started-at="2017-02-02T14:00:12Z" description="#4 Sub-menu items contain items" finished-at="2017-02-02T14:00:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SubMenuItemsTest -->
-        <test-method status="PASS" signature="YouLinkAndNameTest()[pri:0, instance:MainIndependent@5594a1b5]" name="YouLinkAndNameTest" duration-ms="4367" started-at="2017-02-01T11:09:39Z" description="#5 [You]-link and checking username" finished-at="2017-02-01T11:09:43Z">
+        <test-method status="PASS" signature="YouLinkAndNameTest()[pri:0, instance:MainIndependent@59a6e353]" name="YouLinkAndNameTest" duration-ms="5205" started-at="2017-02-02T14:00:14Z" description="#5 [You]-link and checking username" finished-at="2017-02-02T14:00:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- YouLinkAndNameTest -->
-        <test-method status="PASS" signature="cleanUp()[pri:0, instance:MainIndependent@5594a1b5]" name="cleanUp" is-config="true" duration-ms="1" started-at="2017-02-01T11:09:43Z" description="WebDriver clean up" finished-at="2017-02-01T11:09:43Z">
+        <test-method status="PASS" signature="cleanUp()[pri:0, instance:MainIndependent@59a6e353]" name="cleanUp" is-config="true" duration-ms="0" started-at="2017-02-02T14:00:19Z" description="WebDriver clean up" finished-at="2017-02-02T14:00:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cleanUp -->
       </class> <!-- MainIndependent -->
     </test> <!-- flickr testing scenarios -->
-    <test name="flickr testing scenarios 2" duration-ms="336125" started-at="2017-02-01T08:06:39Z" finished-at="2017-02-01T08:12:15Z">
+    <test name="flickr testing scenarios 2" duration-ms="264739" started-at="2017-02-02T10:57:29Z" finished-at="2017-02-02T11:01:53Z">
       <class name="MainIndependent">
-        <test-method status="PASS" signature="prepare(java.lang.String)[pri:0, instance:MainIndependent@67b64c45]" name="prepare" is-config="true" duration-ms="8876" started-at="2017-02-01T11:06:39Z" description="WebDriver init" finished-at="2017-02-01T11:06:48Z">
+        <test-method status="PASS" signature="prepare(java.lang.String)[pri:0, instance:MainIndependent@668bc3d5]" name="prepare" is-config="true" duration-ms="9166" started-at="2017-02-02T13:57:29Z" description="WebDriver init" finished-at="2017-02-02T13:57:38Z">
           <params>
             <param index="0">
               <value>
@@ -192,57 +192,57 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- prepare -->
-        <test-method name="LoginTest" signature="LoginTest()[pri:0, instance:MainIndependent@67b64c45]" is-config="true" status="PASS" duration-ms="23068" finished-at="2017-02-01T11:07:11Z" started-at="2017-02-01T11:06:48Z" depends-on-methods="Conditions.prepare" description="#1 Flickr login test">
+        <test-method name="LoginTest" signature="LoginTest()[pri:0, instance:MainIndependent@668bc3d5]" is-config="true" status="PASS" duration-ms="23247" finished-at="2017-02-02T13:58:01Z" started-at="2017-02-02T13:57:38Z" depends-on-methods="Conditions.prepare" description="#1 Flickr login test">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginTest -->
-        <test-method status="PASS" signature="AlbumTest()[pri:0, instance:MainIndependent@67b64c45]" name="AlbumTest" duration-ms="46499" started-at="2017-02-01T11:07:11Z" description="#10 Every Album has a thumbnail, title, link and a number of photos and views " finished-at="2017-02-01T11:07:58Z">
+        <test-method status="PASS" signature="AlbumTest()[pri:0, instance:MainIndependent@668bc3d5]" name="AlbumTest" duration-ms="33599" started-at="2017-02-02T13:58:01Z" description="#10 Every Album has a thumbnail, title, link and a number of photos and views " finished-at="2017-02-02T13:58:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AlbumTest -->
-        <test-method status="PASS" signature="AuthorsLinkTest()[pri:0, instance:MainIndependent@67b64c45]" name="AuthorsLinkTest" duration-ms="12168" started-at="2017-02-01T11:07:58Z" description="#9 Author’s name navigates to the page with author’s photostream" finished-at="2017-02-01T11:08:10Z">
+        <test-method status="PASS" signature="AuthorsLinkTest()[pri:0, instance:MainIndependent@668bc3d5]" name="AuthorsLinkTest" duration-ms="10084" started-at="2017-02-02T13:58:35Z" description="#9 Author’s name navigates to the page with author’s photostream" finished-at="2017-02-02T13:58:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AuthorsLinkTest -->
-        <test-method status="PASS" signature="DetailsAuthorTest()[pri:0, instance:MainIndependent@67b64c45]" name="DetailsAuthorTest" duration-ms="7638" started-at="2017-02-01T11:08:10Z" description="#8.1.2 Page with photo details contains every all necessary items (Author)" finished-at="2017-02-01T11:08:17Z">
+        <test-method status="PASS" signature="DetailsAuthorTest()[pri:0, instance:MainIndependent@668bc3d5]" name="DetailsAuthorTest" duration-ms="6474" started-at="2017-02-02T13:58:45Z" description="#8.1.2 Page with photo details contains every all necessary items (Author)" finished-at="2017-02-02T13:58:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DetailsAuthorTest -->
-        <test-method status="PASS" signature="DetailsCameraTest()[pri:0, instance:MainIndependent@67b64c45]" name="DetailsCameraTest" duration-ms="8034" started-at="2017-02-01T11:08:17Z" description="#8.6 Page with photo details contains every all necessary items (Camera)" finished-at="2017-02-01T11:08:26Z">
+        <test-method status="PASS" signature="DetailsCameraTest()[pri:0, instance:MainIndependent@668bc3d5]" name="DetailsCameraTest" duration-ms="6715" started-at="2017-02-02T13:58:51Z" description="#8.6 Page with photo details contains every all necessary items (Camera)" finished-at="2017-02-02T13:58:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DetailsCameraTest -->
-        <test-method status="PASS" signature="DetailsDateTest()[pri:0, instance:MainIndependent@67b64c45]" name="DetailsDateTest" duration-ms="8160" started-at="2017-02-01T11:08:26Z" description="#8.4 Page with photo details contains every all necessary items (Date of photo)" finished-at="2017-02-01T11:08:34Z">
+        <test-method status="PASS" signature="DetailsDateTest()[pri:0, instance:MainIndependent@668bc3d5]" name="DetailsDateTest" duration-ms="6288" started-at="2017-02-02T13:58:58Z" description="#8.4 Page with photo details contains every all necessary items (Date of photo)" finished-at="2017-02-02T13:59:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DetailsDateTest -->
-        <test-method status="PASS" signature="DetailsFollowTest()[pri:0, instance:MainIndependent@67b64c45]" name="DetailsFollowTest" duration-ms="8134" started-at="2017-02-01T11:08:34Z" description="#8.2 Page with photo details contains every all necessary items (Follow-button)" finished-at="2017-02-01T11:08:42Z">
+        <test-method status="PASS" signature="DetailsFollowTest()[pri:0, instance:MainIndependent@668bc3d5]" name="DetailsFollowTest" duration-ms="7048" started-at="2017-02-02T13:59:04Z" description="#8.2 Page with photo details contains every all necessary items (Follow-button)" finished-at="2017-02-02T13:59:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DetailsFollowTest -->
-        <test-method status="PASS" signature="DetailsNumbersTest()[pri:0, instance:MainIndependent@67b64c45]" name="DetailsNumbersTest" duration-ms="7807" started-at="2017-02-01T11:08:42Z" description="#8.3 Page with photo details contains every all necessary items (number of views, faves, comments)" finished-at="2017-02-01T11:08:50Z">
+        <test-method status="PASS" signature="DetailsNumbersTest()[pri:0, instance:MainIndependent@668bc3d5]" name="DetailsNumbersTest" duration-ms="7939" started-at="2017-02-02T13:59:11Z" description="#8.3 Page with photo details contains every all necessary items (number of views, faves, comments)" finished-at="2017-02-02T13:59:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DetailsNumbersTest -->
-        <test-method status="PASS" signature="DetailsRightsTest()[pri:0, instance:MainIndependent@67b64c45]" name="DetailsRightsTest" duration-ms="7028" started-at="2017-02-01T11:08:50Z" description="#8.5 Page with photo details contains every all necessary items (Rights link)" finished-at="2017-02-01T11:08:57Z">
+        <test-method status="PASS" signature="DetailsRightsTest()[pri:0, instance:MainIndependent@668bc3d5]" name="DetailsRightsTest" duration-ms="6842" started-at="2017-02-02T13:59:19Z" description="#8.5 Page with photo details contains every all necessary items (Rights link)" finished-at="2017-02-02T13:59:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DetailsRightsTest -->
-        <test-method status="PASS" signature="DetailsTagsTest()[pri:0, instance:MainIndependent@67b64c45]" name="DetailsTagsTest" duration-ms="8577" started-at="2017-02-01T11:08:57Z" description="#8.7 Page with photo details contains every all necessary items (Tags)" finished-at="2017-02-01T11:09:05Z">
+        <test-method status="PASS" signature="DetailsTagsTest()[pri:0, instance:MainIndependent@668bc3d5]" name="DetailsTagsTest" duration-ms="7010" started-at="2017-02-02T13:59:26Z" description="#8.7 Page with photo details contains every all necessary items (Tags)" finished-at="2017-02-02T13:59:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DetailsTagsTest -->
-        <test-method status="PASS" signature="DetailsTitleTest()[pri:0, instance:MainIndependent@67b64c45]" name="DetailsTitleTest" duration-ms="8249" started-at="2017-02-01T11:09:05Z" description="#8.1.1 Page with photo details contains every all necessary items (Title)" finished-at="2017-02-01T11:09:13Z">
+        <test-method status="PASS" signature="DetailsTitleTest()[pri:0, instance:MainIndependent@668bc3d5]" name="DetailsTitleTest" duration-ms="6698" started-at="2017-02-02T13:59:33Z" description="#8.1.1 Page with photo details contains every all necessary items (Title)" finished-at="2017-02-02T13:59:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DetailsTitleTest -->
-        <test-method status="FAIL" signature="ExploreLinkAndPhotoTest()[pri:0, instance:MainIndependent@67b64c45]" name="ExploreLinkAndPhotoTest" duration-ms="47893" started-at="2017-02-01T11:09:13Z" description="#6 [Explore]-link and checking photos with label &#039;&lt;photo_title&gt; by &lt;author&gt;&#039; " finished-at="2017-02-01T11:10:01Z">
+        <test-method status="FAIL" signature="ExploreLinkAndPhotoTest()[pri:0, instance:MainIndependent@668bc3d5]" name="ExploreLinkAndPhotoTest" duration-ms="24571" started-at="2017-02-02T13:59:40Z" description="#6 [Explore]-link and checking photos with label &#039;&lt;photo_title&gt; by &lt;author&gt;&#039; " finished-at="2017-02-02T14:00:04Z">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[Not each photo passes test! expected [97] but found [34]]]>
+              <![CDATA[Not each photo passes test! expected [50] but found [20]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Not each photo passes test! expected [97] but found [34]
+              <![CDATA[java.lang.AssertionError: Not each photo passes test! expected [50] but found [20]
 	at org.testng.Assert.fail(Assert.java:94)
 	at org.testng.Assert.failNotEquals(Assert.java:513)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
@@ -274,46 +274,46 @@
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
             <line>
-              <![CDATA[<a href='C:\Users\Uladzimir_Papeka\IdeaProjects\EPAM\epamPracticeTask-Flickr-\target\surefire-reports\failure_screenshots\ExploreLinkAndPhotoTest_null_01_02_2017_11_10_01.png'> <img src='C:\Users\Uladzimir_Papeka\IdeaProjects\EPAM\epamPracticeTask-Flickr-\target\surefire-reports\failure_screenshots\ExploreLinkAndPhotoTest_null_01_02_2017_11_10_01.png' height='100' width='100'/> </a>]]>
+              <![CDATA[<a href='C:\Users\Uladzimir_Papeka\IdeaProjects\EPAM\epamPracticeTask-Flickr-\target\surefire-reports\failure_screenshots\ExploreLinkAndPhotoTest_null_02_02_2017_02_00_04.png'> <img src='C:\Users\Uladzimir_Papeka\IdeaProjects\EPAM\epamPracticeTask-Flickr-\target\surefire-reports\failure_screenshots\ExploreLinkAndPhotoTest_null_02_02_2017_02_00_04.png' height='100' width='100'/> </a>]]>
             </line>
             <line>
-              <![CDATA[<a href='C:\Users\Uladzimir_Papeka\IdeaProjects\EPAM\epamPracticeTask-Flickr-\target\surefire-reports\failure_screenshots\ExploreLinkAndPhotoTest_null_01_02_2017_11_10_18.png'> <img src='C:\Users\Uladzimir_Papeka\IdeaProjects\EPAM\epamPracticeTask-Flickr-\target\surefire-reports\failure_screenshots\ExploreLinkAndPhotoTest_null_01_02_2017_11_10_18.png' height='100' width='100'/> </a>]]>
+              <![CDATA[<a href='C:\Users\Uladzimir_Papeka\IdeaProjects\EPAM\epamPracticeTask-Flickr-\target\surefire-reports\failure_screenshots\ExploreLinkAndPhotoTest_null_02_02_2017_02_00_13.png'> <img src='C:\Users\Uladzimir_Papeka\IdeaProjects\EPAM\epamPracticeTask-Flickr-\target\surefire-reports\failure_screenshots\ExploreLinkAndPhotoTest_null_02_02_2017_02_00_13.png' height='100' width='100'/> </a>]]>
             </line>
           </reporter-output>
         </test-method> <!-- ExploreLinkAndPhotoTest -->
-        <test-method status="PASS" signature="GalleriesTestItems()[pri:0, instance:MainIndependent@67b64c45]" name="GalleriesTestItems" duration-ms="3293" started-at="2017-02-01T11:10:34Z" description="#12.2 Additional own testing scenarios ([Explore]-&gt;[Galleries]). Check gallery&#039;s items" finished-at="2017-02-01T11:10:37Z">
+        <test-method status="PASS" signature="GalleriesTestItems()[pri:0, instance:MainIndependent@668bc3d5]" name="GalleriesTestItems" duration-ms="2884" started-at="2017-02-02T14:00:21Z" description="#12.2 Additional own testing scenarios ([Explore]-&gt;[Galleries]). Check gallery&#039;s items" finished-at="2017-02-02T14:00:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- GalleriesTestItems -->
-        <test-method status="PASS" signature="GalleriesTestURL()[pri:0, instance:MainIndependent@67b64c45]" name="GalleriesTestURL" duration-ms="8004" started-at="2017-02-01T11:10:37Z" description="#12.1 Additional own testing scenarios ([Explore]-&gt;[Galleries]). Check Url" finished-at="2017-02-01T11:10:45Z">
+        <test-method status="PASS" signature="GalleriesTestURL()[pri:0, instance:MainIndependent@668bc3d5]" name="GalleriesTestURL" duration-ms="8804" started-at="2017-02-02T14:00:24Z" description="#12.1 Additional own testing scenarios ([Explore]-&gt;[Galleries]). Check Url" finished-at="2017-02-02T14:00:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- GalleriesTestURL -->
-        <test-method status="PASS" signature="GroupsTestRecommendedGroups()[pri:0, instance:MainIndependent@67b64c45]" name="GroupsTestRecommendedGroups" duration-ms="5148" started-at="2017-02-01T11:10:45Z" description="#11.2 Additional own testing scenarios ([You]-&gt;[Groups]). Check recommended group" finished-at="2017-02-01T11:10:50Z">
+        <test-method status="PASS" signature="GroupsTestRecommendedGroups()[pri:0, instance:MainIndependent@668bc3d5]" name="GroupsTestRecommendedGroups" duration-ms="4113" started-at="2017-02-02T14:00:33Z" description="#11.2 Additional own testing scenarios ([You]-&gt;[Groups]). Check recommended group" finished-at="2017-02-02T14:00:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- GroupsTestRecommendedGroups -->
-        <test-method status="PASS" signature="GroupsTestURL()[pri:0, instance:MainIndependent@67b64c45]" name="GroupsTestURL" duration-ms="13984" started-at="2017-02-01T11:10:50Z" description="#11.1 Additional own testing scenarios ([You]-&gt;[Groups]). Check Url" finished-at="2017-02-01T11:11:04Z">
+        <test-method status="PASS" signature="GroupsTestURL()[pri:0, instance:MainIndependent@668bc3d5]" name="GroupsTestURL" duration-ms="12035" started-at="2017-02-02T14:00:37Z" description="#11.1 Additional own testing scenarios ([You]-&gt;[Groups]). Check Url" finished-at="2017-02-02T14:00:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- GroupsTestURL -->
-        <test-method status="PASS" signature="MainMenuItemsContTest()[pri:0, instance:MainIndependent@67b64c45]" name="MainMenuItemsContTest" duration-ms="9674" started-at="2017-02-01T11:11:04Z" description="#3.1 Main menu items count test" finished-at="2017-02-01T11:11:14Z">
+        <test-method status="PASS" signature="MainMenuItemsContTest()[pri:0, instance:MainIndependent@668bc3d5]" name="MainMenuItemsContTest" duration-ms="7691" started-at="2017-02-02T14:00:49Z" description="#3.1 Main menu items count test" finished-at="2017-02-02T14:00:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- MainMenuItemsContTest -->
-        <test-method status="PASS" signature="MainMenuItemsTest()[pri:0, instance:MainIndependent@67b64c45]" name="MainMenuItemsTest" duration-ms="9136" started-at="2017-02-01T11:11:14Z" description="#3.2 Main menu items test" finished-at="2017-02-01T11:11:23Z">
+        <test-method status="PASS" signature="MainMenuItemsTest()[pri:0, instance:MainIndependent@668bc3d5]" name="MainMenuItemsTest" duration-ms="10143" started-at="2017-02-02T14:00:56Z" description="#3.2 Main menu items test" finished-at="2017-02-02T14:01:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- MainMenuItemsTest -->
-        <test-method status="PASS" signature="MainPageTitleTest()[pri:0, instance:MainIndependent@67b64c45]" name="MainPageTitleTest" duration-ms="9319" started-at="2017-02-01T11:11:23Z" description="#2 Main page&#039;s title test" finished-at="2017-02-01T11:11:32Z">
+        <test-method status="PASS" signature="MainPageTitleTest()[pri:0, instance:MainIndependent@668bc3d5]" name="MainPageTitleTest" duration-ms="5934" started-at="2017-02-02T14:01:07Z" description="#2 Main page&#039;s title test" finished-at="2017-02-02T14:01:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- MainPageTitleTest -->
-        <test-method status="PASS" signature="NavigateToDetailsTest()[pri:0, instance:MainIndependent@67b64c45]" name="NavigateToDetailsTest" duration-ms="9878" started-at="2017-02-01T11:11:32Z" description="#7 Photo and its title navigate to the same page with other picture details" finished-at="2017-02-01T11:11:42Z">
+        <test-method status="PASS" signature="NavigateToDetailsTest()[pri:0, instance:MainIndependent@668bc3d5]" name="NavigateToDetailsTest" duration-ms="8049" started-at="2017-02-02T14:01:13Z" description="#7 Photo and its title navigate to the same page with other picture details" finished-at="2017-02-02T14:01:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- NavigateToDetailsTest -->
-        <test-method status="FAIL" signature="SearchTestPhoto()[pri:0, instance:MainIndependent@67b64c45]" name="SearchTestPhoto" duration-ms="8718" started-at="2017-02-01T11:11:42Z" description="#13.2 Additional own testing scenarios (Search functionality). Search Photo" finished-at="2017-02-01T11:11:51Z">
+        <test-method status="FAIL" signature="SearchTestPhoto()[pri:0, instance:MainIndependent@668bc3d5]" name="SearchTestPhoto" duration-ms="11241" started-at="2017-02-02T14:01:21Z" description="#13.2 Additional own testing scenarios (Search functionality). Search Photo" finished-at="2017-02-02T14:01:32Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[Your search returned incorrect results, possibly due Firefox!   expected [true] but found [false]]]>
@@ -351,26 +351,26 @@
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
             <line>
-              <![CDATA[<a href='C:\Users\Uladzimir_Papeka\IdeaProjects\EPAM\epamPracticeTask-Flickr-\target\surefire-reports\failure_screenshots\SearchTestPhoto_null_01_02_2017_11_11_51.png'> <img src='C:\Users\Uladzimir_Papeka\IdeaProjects\EPAM\epamPracticeTask-Flickr-\target\surefire-reports\failure_screenshots\SearchTestPhoto_null_01_02_2017_11_11_51.png' height='100' width='100'/> </a>]]>
+              <![CDATA[<a href='C:\Users\Uladzimir_Papeka\IdeaProjects\EPAM\epamPracticeTask-Flickr-\target\surefire-reports\failure_screenshots\SearchTestPhoto_null_02_02_2017_02_01_32.png'> <img src='C:\Users\Uladzimir_Papeka\IdeaProjects\EPAM\epamPracticeTask-Flickr-\target\surefire-reports\failure_screenshots\SearchTestPhoto_null_02_02_2017_02_01_32.png' height='100' width='100'/> </a>]]>
             </line>
             <line>
-              <![CDATA[<a href='C:\Users\Uladzimir_Papeka\IdeaProjects\EPAM\epamPracticeTask-Flickr-\target\surefire-reports\failure_screenshots\SearchTestPhoto_null_01_02_2017_11_11_51.png'> <img src='C:\Users\Uladzimir_Papeka\IdeaProjects\EPAM\epamPracticeTask-Flickr-\target\surefire-reports\failure_screenshots\SearchTestPhoto_null_01_02_2017_11_11_51.png' height='100' width='100'/> </a>]]>
+              <![CDATA[<a href='C:\Users\Uladzimir_Papeka\IdeaProjects\EPAM\epamPracticeTask-Flickr-\target\surefire-reports\failure_screenshots\SearchTestPhoto_null_02_02_2017_02_01_32.png'> <img src='C:\Users\Uladzimir_Papeka\IdeaProjects\EPAM\epamPracticeTask-Flickr-\target\surefire-reports\failure_screenshots\SearchTestPhoto_null_02_02_2017_02_01_32.png' height='100' width='100'/> </a>]]>
             </line>
           </reporter-output>
         </test-method> <!-- SearchTestPhoto -->
-        <test-method status="PASS" signature="SearchTestUrl()[pri:0, instance:MainIndependent@67b64c45]" name="SearchTestUrl" duration-ms="6059" started-at="2017-02-01T11:11:52Z" description="#13.1 Additional own testing scenarios (Search functionality). Search Url" finished-at="2017-02-01T11:11:58Z">
+        <test-method status="PASS" signature="SearchTestUrl()[pri:0, instance:MainIndependent@668bc3d5]" name="SearchTestUrl" duration-ms="4390" started-at="2017-02-02T14:01:32Z" description="#13.1 Additional own testing scenarios (Search functionality). Search Url" finished-at="2017-02-02T14:01:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SearchTestUrl -->
-        <test-method status="PASS" signature="SubMenuItemsTest()[pri:0, instance:MainIndependent@67b64c45]" name="SubMenuItemsTest" duration-ms="9907" started-at="2017-02-01T11:11:58Z" description="#4 Sub-menu items contain items" finished-at="2017-02-01T11:12:08Z">
+        <test-method status="PASS" signature="SubMenuItemsTest()[pri:0, instance:MainIndependent@668bc3d5]" name="SubMenuItemsTest" duration-ms="7333" started-at="2017-02-02T14:01:37Z" description="#4 Sub-menu items contain items" finished-at="2017-02-02T14:01:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SubMenuItemsTest -->
-        <test-method status="PASS" signature="YouLinkAndNameTest()[pri:0, instance:MainIndependent@67b64c45]" name="YouLinkAndNameTest" duration-ms="7852" started-at="2017-02-01T11:12:08Z" description="#5 [You]-link and checking username" finished-at="2017-02-01T11:12:15Z">
+        <test-method status="PASS" signature="YouLinkAndNameTest()[pri:0, instance:MainIndependent@668bc3d5]" name="YouLinkAndNameTest" duration-ms="9421" started-at="2017-02-02T14:01:44Z" description="#5 [You]-link and checking username" finished-at="2017-02-02T14:01:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- YouLinkAndNameTest -->
-        <test-method status="PASS" signature="cleanUp()[pri:0, instance:MainIndependent@67b64c45]" name="cleanUp" is-config="true" duration-ms="0" started-at="2017-02-01T11:12:15Z" description="WebDriver clean up" finished-at="2017-02-01T11:12:15Z">
+        <test-method status="PASS" signature="cleanUp()[pri:0, instance:MainIndependent@668bc3d5]" name="cleanUp" is-config="true" duration-ms="0" started-at="2017-02-02T14:01:53Z" description="WebDriver clean up" finished-at="2017-02-02T14:01:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cleanUp -->

@@ -42,7 +42,7 @@ public class Conditions {
         YahooPage yahoopage = loginpage.loginClick().enterEmail(cr.Data("login"));
         HomePage homepage = yahoopage.enterPassword(cr.Data("password"));
 
-        Assert.assertEquals(driver.getCurrentUrl(),HomePage.HOME_PAGE_URL,"Login has failed");
+        Assert.assertEquals(driver.getCurrentUrl(),homepage.HOME_PAGE_URL,"Login has failed");
     }
 
     @AfterTest(description = "WebDriver clean up")
