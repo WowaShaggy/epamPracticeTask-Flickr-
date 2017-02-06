@@ -12,6 +12,7 @@
           <include name="prepare"/>
           <include name="prepare"/>
           <include name="ExploreLinkAndPhotoTest"/>
+          <include name="AlbumTest"/>
           <include name="LoginTest"/>
           <include name="LoginTest"/>
           <include name="cleanUp"/>

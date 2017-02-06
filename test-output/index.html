@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 4 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">46 methods, 3 failed,   43 passed</span>
+                    <span class="method-stats">46 methods, 4 failed,   42 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -100,6 +100,11 @@
                       <a href="#" panel-name="suite-parallelTest" class="show-methods failed suite-parallelTest"> (show)</a> <!-- show-methods failed suite-parallelTest -->
                     </span>
                     <div class="method-list-content failed suite-parallelTest">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-parallelTest" title="MainIndependent" hash-for-method="AlbumTest">AlbumTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img width="3%" src="failed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-parallelTest" title="MainIndependent" hash-for-method="ExploreLinkAndPhotoTest">ExploreLinkAndPhotoTest</a> <!-- method navigator-link -->
@@ -124,11 +129,6 @@
                       <a href="#" panel-name="suite-parallelTest" class="show-methods passed suite-parallelTest"> (show)</a> <!-- show-methods passed suite-parallelTest -->
                     </span>
                     <div class="method-list-content passed suite-parallelTest">
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-parallelTest" title="MainIndependent" hash-for-method="AlbumTest">AlbumTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-parallelTest" title="MainIndependent" hash-for-method="AlbumTest">AlbumTest</a> <!-- method navigator-link -->
@@ -359,10 +359,27 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
+                  <a name="AlbumTest">
+                  </a> <!-- AlbumTest -->
+                  <span class="method-name">AlbumTest</span>
+                  <div class="stack-trace">java.lang.AssertionError: Not each album has all necessary items expected [4] but found [0]
+	at MainIndependent.AlbumTest(MainIndependent.java:192)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 21 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(#10 Every Album has a thumbnail, title, link and a number of photos and views )                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="ExploreLinkAndPhotoTest">
                   </a> <!-- ExploreLinkAndPhotoTest -->
                   <span class="method-name">ExploreLinkAndPhotoTest</span>
-                  <div class="stack-trace">java.lang.AssertionError: Not each photo passes test! expected [50] but found [20]
+                  <div class="stack-trace">java.lang.AssertionError: Not each photo passes test! expected [100] but found [41]
 	at MainIndependent.ExploreLinkAndPhotoTest(MainIndependent.java:69)
 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
@@ -379,7 +396,7 @@
                   <a name="ExploreLinkAndPhotoTest">
                   </a> <!-- ExploreLinkAndPhotoTest -->
                   <span class="method-name">ExploreLinkAndPhotoTest</span>
-                  <div class="stack-trace">java.lang.AssertionError: Not each photo passes test! expected [50] but found [20]
+                  <div class="stack-trace">java.lang.AssertionError: Not each photo passes test! expected [100] but found [41]
 	at MainIndependent.ExploreLinkAndPhotoTest(MainIndependent.java:69)
 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
@@ -427,15 +444,6 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="AlbumTest">
-                  </a> <!-- AlbumTest -->
-                  <span class="method-name">AlbumTest</span>
-                  <em>
-(#10 Every Album has a thumbnail, title, link and a number of photos and views )                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="AuthorsLinkTest">
                   </a> <!-- AuthorsLinkTest -->
                   <span class="method-name">AuthorsLinkTest</span>
@@ -773,7 +781,7 @@
                   </a> <!-- SubMenuItemsTest -->
                   <span class="method-name">SubMenuItemsTest</span>
                   <em>
-(#4 Sub-menu items contain items)                  </em>
+(#4 Sub-menu items contain links)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -782,7 +790,7 @@
                   </a> <!-- SubMenuItemsTest -->
                   <span class="method-name">SubMenuItemsTest</span>
                   <em>
-(#4 Sub-menu items contain items)                  </em>
+(#4 Sub-menu items contain links)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -874,192 +882,192 @@ data.addRows(46);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'AlbumTest')
 data.setCell(0, 2, 'MainIndependent')
-data.setCell(0, 3, 33599);
+data.setCell(0, 3, 73328);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'AlbumTest')
+data.setCell(1, 1, 'ExploreLinkAndPhotoTest')
 data.setCell(1, 2, 'MainIndependent')
-data.setCell(1, 3, 32140);
+data.setCell(1, 3, 55894);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'ExploreLinkAndPhotoTest')
+data.setCell(2, 1, 'AlbumTest')
 data.setCell(2, 2, 'MainIndependent')
-data.setCell(2, 3, 24571);
+data.setCell(2, 3, 39068);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'ExploreLinkAndPhotoTest')
 data.setCell(3, 2, 'MainIndependent')
-data.setCell(3, 3, 13467);
+data.setCell(3, 3, 29254);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'GroupsTestURL')
 data.setCell(4, 2, 'MainIndependent')
-data.setCell(4, 3, 12035);
+data.setCell(4, 3, 12114);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'SearchTestPhoto')
+data.setCell(5, 1, 'AuthorsLinkTest')
 data.setCell(5, 2, 'MainIndependent')
-data.setCell(5, 3, 11241);
+data.setCell(5, 3, 11693);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'MainMenuItemsTest')
+data.setCell(6, 1, 'NavigateToDetailsTest')
 data.setCell(6, 2, 'MainIndependent')
-data.setCell(6, 3, 10143);
+data.setCell(6, 3, 9742);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'AuthorsLinkTest')
+data.setCell(7, 1, 'YouLinkAndNameTest')
 data.setCell(7, 2, 'MainIndependent')
-data.setCell(7, 3, 10084);
+data.setCell(7, 3, 9667);
 data.setCell(8, 0, 8)
 data.setCell(8, 1, 'SearchTestPhoto')
 data.setCell(8, 2, 'MainIndependent')
-data.setCell(8, 3, 9821);
+data.setCell(8, 3, 8607);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'GalleriesTestItems')
+data.setCell(9, 1, 'DetailsAuthorTest')
 data.setCell(9, 2, 'MainIndependent')
-data.setCell(9, 3, 9537);
+data.setCell(9, 3, 8228);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'YouLinkAndNameTest')
+data.setCell(10, 1, 'DetailsTagsTest')
 data.setCell(10, 2, 'MainIndependent')
-data.setCell(10, 3, 9421);
+data.setCell(10, 3, 7817);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'GalleriesTestURL')
+data.setCell(11, 1, 'SearchTestPhoto')
 data.setCell(11, 2, 'MainIndependent')
-data.setCell(11, 3, 8907);
+data.setCell(11, 3, 7806);
 data.setCell(12, 0, 12)
 data.setCell(12, 1, 'GalleriesTestURL')
 data.setCell(12, 2, 'MainIndependent')
-data.setCell(12, 3, 8804);
+data.setCell(12, 3, 7482);
 data.setCell(13, 0, 13)
-data.setCell(13, 1, 'NavigateToDetailsTest')
+data.setCell(13, 1, 'SubMenuItemsTest')
 data.setCell(13, 2, 'MainIndependent')
-data.setCell(13, 3, 8049);
+data.setCell(13, 3, 7301);
 data.setCell(14, 0, 14)
 data.setCell(14, 1, 'DetailsNumbersTest')
 data.setCell(14, 2, 'MainIndependent')
-data.setCell(14, 3, 7939);
+data.setCell(14, 3, 7282);
 data.setCell(15, 0, 15)
-data.setCell(15, 1, 'NavigateToDetailsTest')
+data.setCell(15, 1, 'DetailsDateTest')
 data.setCell(15, 2, 'MainIndependent')
-data.setCell(15, 3, 7792);
+data.setCell(15, 3, 6987);
 data.setCell(16, 0, 16)
-data.setCell(16, 1, 'GroupsTestURL')
+data.setCell(16, 1, 'DetailsRightsTest')
 data.setCell(16, 2, 'MainIndependent')
-data.setCell(16, 3, 7696);
+data.setCell(16, 3, 6966);
 data.setCell(17, 0, 17)
-data.setCell(17, 1, 'MainMenuItemsContTest')
+data.setCell(17, 1, 'MainMenuItemsTest')
 data.setCell(17, 2, 'MainIndependent')
-data.setCell(17, 3, 7691);
+data.setCell(17, 3, 6817);
 data.setCell(18, 0, 18)
-data.setCell(18, 1, 'SubMenuItemsTest')
+data.setCell(18, 1, 'DetailsTitleTest')
 data.setCell(18, 2, 'MainIndependent')
-data.setCell(18, 3, 7333);
+data.setCell(18, 3, 6768);
 data.setCell(19, 0, 19)
 data.setCell(19, 1, 'DetailsFollowTest')
 data.setCell(19, 2, 'MainIndependent')
-data.setCell(19, 3, 7048);
+data.setCell(19, 3, 6703);
 data.setCell(20, 0, 20)
-data.setCell(20, 1, 'DetailsTagsTest')
+data.setCell(20, 1, 'DetailsCameraTest')
 data.setCell(20, 2, 'MainIndependent')
-data.setCell(20, 3, 7010);
+data.setCell(20, 3, 6623);
 data.setCell(21, 0, 21)
-data.setCell(21, 1, 'DetailsRightsTest')
+data.setCell(21, 1, 'MainMenuItemsContTest')
 data.setCell(21, 2, 'MainIndependent')
-data.setCell(21, 3, 6842);
+data.setCell(21, 3, 6594);
 data.setCell(22, 0, 22)
-data.setCell(22, 1, 'DetailsCameraTest')
+data.setCell(22, 1, 'AuthorsLinkTest')
 data.setCell(22, 2, 'MainIndependent')
-data.setCell(22, 3, 6715);
+data.setCell(22, 3, 6107);
 data.setCell(23, 0, 23)
-data.setCell(23, 1, 'DetailsTitleTest')
+data.setCell(23, 1, 'MainPageTitleTest')
 data.setCell(23, 2, 'MainIndependent')
-data.setCell(23, 3, 6698);
+data.setCell(23, 3, 5490);
 data.setCell(24, 0, 24)
-data.setCell(24, 1, 'DetailsAuthorTest')
+data.setCell(24, 1, 'NavigateToDetailsTest')
 data.setCell(24, 2, 'MainIndependent')
-data.setCell(24, 3, 6474);
+data.setCell(24, 3, 5440);
 data.setCell(25, 0, 25)
-data.setCell(25, 1, 'DetailsDateTest')
+data.setCell(25, 1, 'GroupsTestURL')
 data.setCell(25, 2, 'MainIndependent')
-data.setCell(25, 3, 6288);
+data.setCell(25, 3, 5280);
 data.setCell(26, 0, 26)
-data.setCell(26, 1, 'SearchTestUrl')
+data.setCell(26, 1, 'DetailsCameraTest')
 data.setCell(26, 2, 'MainIndependent')
-data.setCell(26, 3, 6158);
+data.setCell(26, 3, 4982);
 data.setCell(27, 0, 27)
-data.setCell(27, 1, 'MainPageTitleTest')
+data.setCell(27, 1, 'DetailsAuthorTest')
 data.setCell(27, 2, 'MainIndependent')
-data.setCell(27, 3, 5934);
+data.setCell(27, 3, 4960);
 data.setCell(28, 0, 28)
-data.setCell(28, 1, 'AuthorsLinkTest')
+data.setCell(28, 1, 'GalleriesTestURL')
 data.setCell(28, 2, 'MainIndependent')
-data.setCell(28, 3, 5210);
+data.setCell(28, 3, 4878);
 data.setCell(29, 0, 29)
-data.setCell(29, 1, 'YouLinkAndNameTest')
+data.setCell(29, 1, 'DetailsDateTest')
 data.setCell(29, 2, 'MainIndependent')
-data.setCell(29, 3, 5205);
+data.setCell(29, 3, 4488);
 data.setCell(30, 0, 30)
-data.setCell(30, 1, 'GroupsTestRecommendedGroups')
+data.setCell(30, 1, 'DetailsRightsTest')
 data.setCell(30, 2, 'MainIndependent')
-data.setCell(30, 3, 4555);
+data.setCell(30, 3, 4390);
 data.setCell(31, 0, 31)
-data.setCell(31, 1, 'SearchTestUrl')
+data.setCell(31, 1, 'DetailsFollowTest')
 data.setCell(31, 2, 'MainIndependent')
-data.setCell(31, 3, 4390);
+data.setCell(31, 3, 4170);
 data.setCell(32, 0, 32)
 data.setCell(32, 1, 'GroupsTestRecommendedGroups')
 data.setCell(32, 2, 'MainIndependent')
-data.setCell(32, 3, 4113);
+data.setCell(32, 3, 4169);
 data.setCell(33, 0, 33)
-data.setCell(33, 1, 'DetailsFollowTest')
+data.setCell(33, 1, 'SearchTestUrl')
 data.setCell(33, 2, 'MainIndependent')
-data.setCell(33, 3, 3679);
+data.setCell(33, 3, 4080);
 data.setCell(34, 0, 34)
-data.setCell(34, 1, 'DetailsNumbersTest')
+data.setCell(34, 1, 'GroupsTestRecommendedGroups')
 data.setCell(34, 2, 'MainIndependent')
-data.setCell(34, 3, 3599);
+data.setCell(34, 3, 3964);
 data.setCell(35, 0, 35)
-data.setCell(35, 1, 'MainPageTitleTest')
+data.setCell(35, 1, 'DetailsTagsTest')
 data.setCell(35, 2, 'MainIndependent')
-data.setCell(35, 3, 3555);
+data.setCell(35, 3, 3864);
 data.setCell(36, 0, 36)
-data.setCell(36, 1, 'DetailsTagsTest')
+data.setCell(36, 1, 'SubMenuItemsTest')
 data.setCell(36, 2, 'MainIndependent')
-data.setCell(36, 3, 3538);
+data.setCell(36, 3, 3677);
 data.setCell(37, 0, 37)
-data.setCell(37, 1, 'DetailsCameraTest')
+data.setCell(37, 1, 'DetailsNumbersTest')
 data.setCell(37, 2, 'MainIndependent')
-data.setCell(37, 3, 3419);
+data.setCell(37, 3, 3677);
 data.setCell(38, 0, 38)
-data.setCell(38, 1, 'DetailsDateTest')
+data.setCell(38, 1, 'YouLinkAndNameTest')
 data.setCell(38, 2, 'MainIndependent')
-data.setCell(38, 3, 3288);
+data.setCell(38, 3, 3633);
 data.setCell(39, 0, 39)
-data.setCell(39, 1, 'DetailsTitleTest')
+data.setCell(39, 1, 'GalleriesTestItems')
 data.setCell(39, 2, 'MainIndependent')
-data.setCell(39, 3, 3282);
+data.setCell(39, 3, 3581);
 data.setCell(40, 0, 40)
-data.setCell(40, 1, 'DetailsAuthorTest')
+data.setCell(40, 1, 'DetailsTitleTest')
 data.setCell(40, 2, 'MainIndependent')
-data.setCell(40, 3, 3256);
+data.setCell(40, 3, 3529);
 data.setCell(41, 0, 41)
-data.setCell(41, 1, 'DetailsRightsTest')
+data.setCell(41, 1, 'MainMenuItemsTest')
 data.setCell(41, 2, 'MainIndependent')
-data.setCell(41, 3, 3222);
+data.setCell(41, 3, 3282);
 data.setCell(42, 0, 42)
-data.setCell(42, 1, 'MainMenuItemsTest')
+data.setCell(42, 1, 'GalleriesTestItems')
 data.setCell(42, 2, 'MainIndependent')
-data.setCell(42, 3, 3003);
+data.setCell(42, 3, 3209);
 data.setCell(43, 0, 43)
-data.setCell(43, 1, 'GalleriesTestItems')
+data.setCell(43, 1, 'SearchTestUrl')
 data.setCell(43, 2, 'MainIndependent')
-data.setCell(43, 3, 2884);
+data.setCell(43, 3, 2187);
 data.setCell(44, 0, 44)
 data.setCell(44, 1, 'MainMenuItemsContTest')
 data.setCell(44, 2, 'MainIndependent')
-data.setCell(44, 3, 2615);
+data.setCell(44, 3, 1976);
 data.setCell(45, 0, 45)
-data.setCell(45, 1, 'SubMenuItemsTest')
+data.setCell(45, 1, 'MainPageTitleTest')
 data.setCell(45, 2, 'MainIndependent')
-data.setCell(45, 3, 2390);
+data.setCell(45, 3, 1971);
 window.suiteTableData['parallelTest']= { tableData: data, tableDiv: 'times-div-parallelTest'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 6 minutes</span>
+              <span class="suite-total-time">Total running time: 7 minutes</span>
               <div id="times-div-parallelTest">
               </div> <!-- times-div-parallelTest -->
             </div> <!-- times-div -->
@@ -1071,24 +1079,31 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="reporter-method-div">
-              <span class="reporter-method-name">ExploreLinkAndPhotoTest</span>
+              <span class="reporter-method-name">AlbumTest</span>
               <div class="reporter-method-output-div">
-                <span class="reporter-method-output"><a href='C:\Users\Uladzimir_Papeka\IdeaProjects\EPAM\epamPracticeTask-Flickr-\target\surefire-reports\failure_screenshots\ExploreLinkAndPhotoTest_null_02_02_2017_01_59_05.png'> <img src='C:\Users\Uladzimir_Papeka\IdeaProjects\EPAM\epamPracticeTask-Flickr-\target\surefire-reports\failure_screenshots\ExploreLinkAndPhotoTest_null_02_02_2017_01_59_05.png' height='100' width='100'/> </a></span>
-                <span class="reporter-method-output"><a href='C:\Users\Uladzimir_Papeka\IdeaProjects\EPAM\epamPracticeTask-Flickr-\target\surefire-reports\failure_screenshots\ExploreLinkAndPhotoTest_null_02_02_2017_01_59_07.png'> <img src='C:\Users\Uladzimir_Papeka\IdeaProjects\EPAM\epamPracticeTask-Flickr-\target\surefire-reports\failure_screenshots\ExploreLinkAndPhotoTest_null_02_02_2017_01_59_07.png' height='100' width='100'/> </a></span>
+                <span class="reporter-method-output"><a href='C:\Users\Uladzimir_Papeka\IdeaProjects\EPAM\epamPracticeTask-Flickr-\target\surefire-reports\failure_screenshots\AlbumTest_null_06_02_2017_02_17_41.png'> <img src='C:\Users\Uladzimir_Papeka\IdeaProjects\EPAM\epamPracticeTask-Flickr-\target\surefire-reports\failure_screenshots\AlbumTest_null_06_02_2017_02_17_41.png' height='100' width='100'/> </a></span>
+                <span class="reporter-method-output"><a href='C:\Users\Uladzimir_Papeka\IdeaProjects\EPAM\epamPracticeTask-Flickr-\target\surefire-reports\failure_screenshots\AlbumTest_null_06_02_2017_02_17_43.png'> <img src='C:\Users\Uladzimir_Papeka\IdeaProjects\EPAM\epamPracticeTask-Flickr-\target\surefire-reports\failure_screenshots\AlbumTest_null_06_02_2017_02_17_43.png' height='100' width='100'/> </a></span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
               <span class="reporter-method-name">ExploreLinkAndPhotoTest</span>
               <div class="reporter-method-output-div">
-                <span class="reporter-method-output"><a href='C:\Users\Uladzimir_Papeka\IdeaProjects\EPAM\epamPracticeTask-Flickr-\target\surefire-reports\failure_screenshots\ExploreLinkAndPhotoTest_null_02_02_2017_02_00_04.png'> <img src='C:\Users\Uladzimir_Papeka\IdeaProjects\EPAM\epamPracticeTask-Flickr-\target\surefire-reports\failure_screenshots\ExploreLinkAndPhotoTest_null_02_02_2017_02_00_04.png' height='100' width='100'/> </a></span>
-                <span class="reporter-method-output"><a href='C:\Users\Uladzimir_Papeka\IdeaProjects\EPAM\epamPracticeTask-Flickr-\target\surefire-reports\failure_screenshots\ExploreLinkAndPhotoTest_null_02_02_2017_02_00_13.png'> <img src='C:\Users\Uladzimir_Papeka\IdeaProjects\EPAM\epamPracticeTask-Flickr-\target\surefire-reports\failure_screenshots\ExploreLinkAndPhotoTest_null_02_02_2017_02_00_13.png' height='100' width='100'/> </a></span>
+                <span class="reporter-method-output"><a href='C:\Users\Uladzimir_Papeka\IdeaProjects\EPAM\epamPracticeTask-Flickr-\target\surefire-reports\failure_screenshots\ExploreLinkAndPhotoTest_null_06_02_2017_02_18_53.png'> <img src='C:\Users\Uladzimir_Papeka\IdeaProjects\EPAM\epamPracticeTask-Flickr-\target\surefire-reports\failure_screenshots\ExploreLinkAndPhotoTest_null_06_02_2017_02_18_53.png' height='100' width='100'/> </a></span>
+                <span class="reporter-method-output"><a href='C:\Users\Uladzimir_Papeka\IdeaProjects\EPAM\epamPracticeTask-Flickr-\target\surefire-reports\failure_screenshots\ExploreLinkAndPhotoTest_null_06_02_2017_02_18_53.png'> <img src='C:\Users\Uladzimir_Papeka\IdeaProjects\EPAM\epamPracticeTask-Flickr-\target\surefire-reports\failure_screenshots\ExploreLinkAndPhotoTest_null_06_02_2017_02_18_53.png' height='100' width='100'/> </a></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">ExploreLinkAndPhotoTest</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"><a href='C:\Users\Uladzimir_Papeka\IdeaProjects\EPAM\epamPracticeTask-Flickr-\target\surefire-reports\failure_screenshots\ExploreLinkAndPhotoTest_null_06_02_2017_02_20_34.png'> <img src='C:\Users\Uladzimir_Papeka\IdeaProjects\EPAM\epamPracticeTask-Flickr-\target\surefire-reports\failure_screenshots\ExploreLinkAndPhotoTest_null_06_02_2017_02_20_34.png' height='100' width='100'/> </a></span>
+                <span class="reporter-method-output"><a href='C:\Users\Uladzimir_Papeka\IdeaProjects\EPAM\epamPracticeTask-Flickr-\target\surefire-reports\failure_screenshots\ExploreLinkAndPhotoTest_null_06_02_2017_02_20_50.png'> <img src='C:\Users\Uladzimir_Papeka\IdeaProjects\EPAM\epamPracticeTask-Flickr-\target\surefire-reports\failure_screenshots\ExploreLinkAndPhotoTest_null_06_02_2017_02_20_50.png' height='100' width='100'/> </a></span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
               <span class="reporter-method-name">SearchTestPhoto</span>
               <div class="reporter-method-output-div">
-                <span class="reporter-method-output"><a href='C:\Users\Uladzimir_Papeka\IdeaProjects\EPAM\epamPracticeTask-Flickr-\target\surefire-reports\failure_screenshots\SearchTestPhoto_null_02_02_2017_02_01_32.png'> <img src='C:\Users\Uladzimir_Papeka\IdeaProjects\EPAM\epamPracticeTask-Flickr-\target\surefire-reports\failure_screenshots\SearchTestPhoto_null_02_02_2017_02_01_32.png' height='100' width='100'/> </a></span>
-                <span class="reporter-method-output"><a href='C:\Users\Uladzimir_Papeka\IdeaProjects\EPAM\epamPracticeTask-Flickr-\target\surefire-reports\failure_screenshots\SearchTestPhoto_null_02_02_2017_02_01_32.png'> <img src='C:\Users\Uladzimir_Papeka\IdeaProjects\EPAM\epamPracticeTask-Flickr-\target\surefire-reports\failure_screenshots\SearchTestPhoto_null_02_02_2017_02_01_32.png' height='100' width='100'/> </a></span>
+                <span class="reporter-method-output"><a href='C:\Users\Uladzimir_Papeka\IdeaProjects\EPAM\epamPracticeTask-Flickr-\target\surefire-reports\failure_screenshots\SearchTestPhoto_null_06_02_2017_02_22_09.png'> <img src='C:\Users\Uladzimir_Papeka\IdeaProjects\EPAM\epamPracticeTask-Flickr-\target\surefire-reports\failure_screenshots\SearchTestPhoto_null_06_02_2017_02_22_09.png' height='100' width='100'/> </a></span>
+                <span class="reporter-method-output"><a href='C:\Users\Uladzimir_Papeka\IdeaProjects\EPAM\epamPracticeTask-Flickr-\target\surefire-reports\failure_screenshots\SearchTestPhoto_null_06_02_2017_02_22_09.png'> <img src='C:\Users\Uladzimir_Papeka\IdeaProjects\EPAM\epamPracticeTask-Flickr-\target\surefire-reports\failure_screenshots\SearchTestPhoto_null_06_02_2017_02_22_09.png' height='100' width='100'/> </a></span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -1108,218 +1123,220 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">MainIndependent</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
-                <span class="method-name">prepare(Chrome)</span>
+                <span class="method-name">prepare(Firefox)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-test before">
-                <span class="method-name">prepare(Firefox)</span>
-                <span class="method-start">5 ms</span>
+                <span class="method-name">prepare(Chrome)</span>
+                <span class="method-start">1 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-test before">
                 <span class="method-name">LoginTest</span>
-                <span class="method-start">2601 ms</span>
+                <span class="method-start">2626 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-test before">
                 <span class="method-name">LoginTest</span>
-                <span class="method-start">9171 ms</span>
+                <span class="method-start">7626 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">AlbumTest</span>
-                <span class="method-start">18680 ms</span>
+                <span class="method-start">18861 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">AlbumTest</span>
-                <span class="method-start">32418 ms</span>
+                <span class="method-start">32700 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">AuthorsLinkTest</span>
-                <span class="method-start">50820 ms</span>
+                <span class="method-start">60011 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">DetailsAuthorTest</span>
-                <span class="method-start">56031 ms</span>
+                <span class="method-start">66118 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">DetailsCameraTest</span>
-                <span class="method-start">59287 ms</span>
+                <span class="method-start">71079 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">DetailsDateTest</span>
-                <span class="method-start">62707 ms</span>
+                <span class="method-start">76061 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">DetailsFollowTest</span>
-                <span class="method-start">65996 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">AuthorsLinkTest</span>
-                <span class="method-start">66017 ms</span>
+                <span class="method-start">80549 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">DetailsNumbersTest</span>
-                <span class="method-start">69675 ms</span>
+                <span class="method-start">84719 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">DetailsRightsTest</span>
-                <span class="method-start">73274 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">DetailsAuthorTest</span>
-                <span class="method-start">76101 ms</span>
+                <span class="method-start">88396 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">DetailsTagsTest</span>
-                <span class="method-start">76496 ms</span>
+                <span class="method-start">92786 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">DetailsTitleTest</span>
-                <span class="method-start">80034 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">DetailsCameraTest</span>
-                <span class="method-start">82576 ms</span>
+                <span class="method-start">96650 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">ExploreLinkAndPhotoTest</span>
-                <span class="method-start">83316 ms</span>
+                <span class="method-start">100179 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">DetailsDateTest</span>
-                <span class="method-start">89292 ms</span>
+                <span class="method-name">AuthorsLinkTest</span>
+                <span class="method-start">106028 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">DetailsFollowTest</span>
-                <span class="method-start">95581 ms</span>
+                <span class="method-name">DetailsAuthorTest</span>
+                <span class="method-start">117722 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">DetailsCameraTest</span>
+                <span class="method-start">125950 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">GalleriesTestItems</span>
-                <span class="method-start">99515 ms</span>
+                <span class="method-start">130944 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">DetailsNumbersTest</span>
-                <span class="method-start">102629 ms</span>
+                <span class="method-name">DetailsDateTest</span>
+                <span class="method-start">132574 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">GalleriesTestURL</span>
-                <span class="method-start">109053 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">DetailsRightsTest</span>
-                <span class="method-start">110568 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">DetailsTagsTest</span>
-                <span class="method-start">117410 ms</span>
+                <span class="method-start">134153 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">GroupsTestRecommendedGroups</span>
-                <span class="method-start">117960 ms</span>
+                <span class="method-start">139031 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">DetailsFollowTest</span>
+                <span class="method-start">139561 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">GroupsTestURL</span>
-                <span class="method-start">122515 ms</span>
+                <span class="method-start">143200 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">DetailsTitleTest</span>
-                <span class="method-start">124420 ms</span>
+                <span class="method-name">DetailsNumbersTest</span>
+                <span class="method-start">146264 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">MainMenuItemsContTest</span>
-                <span class="method-start">130211 ms</span>
+                <span class="method-start">148480 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">MainMenuItemsTest</span>
+                <span class="method-start">150457 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">DetailsRightsTest</span>
+                <span class="method-start">153546 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">MainPageTitleTest</span>
+                <span class="method-start">153739 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">NavigateToDetailsTest</span>
+                <span class="method-start">155711 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">DetailsTagsTest</span>
+                <span class="method-start">160512 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">SearchTestPhoto</span>
+                <span class="method-start">161152 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">DetailsTitleTest</span>
+                <span class="method-start">168329 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">SearchTestUrl</span>
+                <span class="method-start">168958 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">SubMenuItemsTest</span>
+                <span class="method-start">171145 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">YouLinkAndNameTest</span>
+                <span class="method-start">174822 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">ExploreLinkAndPhotoTest</span>
-                <span class="method-start">131119 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">MainMenuItemsTest</span>
-                <span class="method-start">132827 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">MainPageTitleTest</span>
-                <span class="method-start">135831 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">NavigateToDetailsTest</span>
-                <span class="method-start">139386 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">SearchTestPhoto</span>
-                <span class="method-start">147179 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">SearchTestUrl</span>
-                <span class="method-start">157001 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">SubMenuItemsTest</span>
-                <span class="method-start">163159 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">YouLinkAndNameTest</span>
-                <span class="method-start">165550 ms</span>
+                <span class="method-start">175097 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">cleanUp</span>
-                <span class="method-start">170756 ms</span>
+                <span class="method-start">178457 ms</span>
               </div> <!-- configuration-test after -->
               <div class="test-method">
                 <span class="method-name">GalleriesTestItems</span>
-                <span class="method-start">172286 ms</span>
+                <span class="method-start">261288 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">GalleriesTestURL</span>
-                <span class="method-start">175170 ms</span>
+                <span class="method-start">264869 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">GroupsTestRecommendedGroups</span>
-                <span class="method-start">183974 ms</span>
+                <span class="method-start">272351 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">GroupsTestURL</span>
-                <span class="method-start">188087 ms</span>
+                <span class="method-start">276315 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">MainMenuItemsContTest</span>
-                <span class="method-start">200122 ms</span>
+                <span class="method-start">288429 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">MainMenuItemsTest</span>
-                <span class="method-start">207813 ms</span>
+                <span class="method-start">295023 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">MainPageTitleTest</span>
-                <span class="method-start">217956 ms</span>
+                <span class="method-start">301840 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">NavigateToDetailsTest</span>
-                <span class="method-start">223890 ms</span>
+                <span class="method-start">307330 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">SearchTestPhoto</span>
-                <span class="method-start">231939 ms</span>
+                <span class="method-start">317073 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">SearchTestUrl</span>
-                <span class="method-start">243600 ms</span>
+                <span class="method-start">326108 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">SubMenuItemsTest</span>
-                <span class="method-start">247990 ms</span>
+                <span class="method-start">330188 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">YouLinkAndNameTest</span>
-                <span class="method-start">255323 ms</span>
+                <span class="method-start">337489 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">cleanUp</span>
-                <span class="method-start">264744 ms</span>
+                <span class="method-start">347157 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -2,31 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1fcb4a48-2b1b-471d-9d39-876f467f71dd" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/org_jbehave_site_jbehave_site_resources_2_0_2.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/jbehave_core_4_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/jbehave_maven_plugin_4_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/jbehave_maven_plugin_4_1__2_.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/jbehave_sample_1_0_SNAPSHOT.xml" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/steps/ScenarioContext.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/steps/Trade.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FlickrTest.iml" afterPath="$PROJECT_DIR$/FlickrTest.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pageObjects/LoginPage.java" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/LoginPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pageObjects/YahooPage.java" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/YahooPage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/MyStories.java" afterPath="$PROJECT_DIR$/src/main/java/MyStories.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/steps/MySteps.java" afterPath="$PROJECT_DIR$/src/main/java/steps/MySteps.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/stories/flickr.story" afterPath="$PROJECT_DIR$/src/main/resources/stories/flickr.story" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/suites/parallel.xml" afterPath="$PROJECT_DIR$/src/main/resources/suites/parallel.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/test/Conditions.java" afterPath="$PROJECT_DIR$/src/test/test/Conditions.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/test/MainIndependent.java" afterPath="$PROJECT_DIR$/src/test/test/MainIndependent.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test-output/emailable-report.html" afterPath="$PROJECT_DIR$/test-output/emailable-report.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test-output/index.html" afterPath="$PROJECT_DIR$/test-output/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test-output/junitreports/TEST-MainIndependent.xml" afterPath="$PROJECT_DIR$/test-output/junitreports/TEST-MainIndependent.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test-output/old/index.html" afterPath="$PROJECT_DIR$/test-output/old/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test-output/old/parallelTest/classes.html" afterPath="$PROJECT_DIR$/test-output/old/parallelTest/classes.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test-output/old/parallelTest/methods-alphabetical.html" afterPath="$PROJECT_DIR$/test-output/old/parallelTest/methods-alphabetical.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test-output/old/parallelTest/methods.html" afterPath="$PROJECT_DIR$/test-output/old/parallelTest/methods.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test-output/old/parallelTest/reporter-output.html" afterPath="$PROJECT_DIR$/test-output/old/parallelTest/reporter-output.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test-output/old/parallelTest/toc.html" afterPath="$PROJECT_DIR$/test-output/old/parallelTest/toc.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test-output/parallelTest/flickr testing scenarios 2.html" afterPath="$PROJECT_DIR$/test-output/parallelTest/flickr testing scenarios 2.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test-output/parallelTest/flickr testing scenarios 2.xml" afterPath="$PROJECT_DIR$/test-output/parallelTest/flickr testing scenarios 2.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test-output/parallelTest/flickr testing scenarios.html" afterPath="$PROJECT_DIR$/test-output/parallelTest/flickr testing scenarios.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test-output/parallelTest/flickr testing scenarios.xml" afterPath="$PROJECT_DIR$/test-output/parallelTest/flickr testing scenarios.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test-output/parallelTest/testng-failed.xml" afterPath="$PROJECT_DIR$/test-output/parallelTest/testng-failed.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test-output/testng-failed.xml" afterPath="$PROJECT_DIR$/test-output/testng-failed.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test-output/testng-results.xml" afterPath="$PROJECT_DIR$/test-output/testng-results.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -55,24 +52,45 @@
       <file leaf-file-name="MySteps.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/steps/MySteps.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="39" lean-forward="true" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="39" />
+            <state relative-caret-position="433">
+              <caret line="140" column="27" lean-forward="true" selection-start-line="140" selection-start-column="27" selection-end-line="140" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#IPrepare#0;class#MySteps#0" expanded="false" />
-                <element signature="method#IShouldCheckUrl#0;class#MySteps#0" expanded="false" />
-                <element signature="method#IShouldCheckNumberOfMenusItems#0;class#MySteps#0" expanded="false" />
+                <element signature="e#3574#3575#0" expanded="true" />
+                <element signature="e#3638#3639#0" expanded="true" />
+                <element signature="e#4412#4413#0" expanded="true" />
+                <element signature="e#4478#4479#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="flickr.story" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/stories/flickr.story">
+      <file leaf-file-name="MyStories.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/MyStories.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="47" lean-forward="true" selection-start-line="7" selection-start-column="47" selection-end-line="7" selection-end-column="47" />
+            <state relative-caret-position="73">
+              <caret line="33" column="24" lean-forward="false" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="24" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ScenarioContext.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/steps/ScenarioContext.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="25" column="28" lean-forward="false" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#228#229#0" expanded="true" />
+                <element signature="e#261#262#0" expanded="true" />
+                <element signature="e#292#293#0" expanded="true" />
+                <element signature="e#332#333#0" expanded="true" />
+                <element signature="e#383#384#0" expanded="true" />
+                <element signature="e#413#414#0" expanded="true" />
+                <element signature="e#448#449#0" expanded="true" />
+                <element signature="e#484#485#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -80,15 +98,15 @@
       <file leaf-file-name="MainIndependent.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/test/MainIndependent.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="21" column="8" lean-forward="false" selection-start-line="21" selection-start-column="8" selection-end-line="22" selection-end-column="75" />
+            <state relative-caret-position="419">
+              <caret line="81" column="43" lean-forward="false" selection-start-line="81" selection-start-column="32" selection-end-line="81" selection-end-column="43" />
               <folding>
                 <element signature="method#MainPageTitleTest#0;class#MainIndependent#0" expanded="false" />
+                <element signature="method#MainMenuItemsContTest#0;class#MainIndependent#0" expanded="false" />
                 <element signature="method#MainMenuItemsTest#0;class#MainIndependent#0" expanded="false" />
                 <element signature="method#SubMenuItemsTest#0;class#MainIndependent#0" expanded="false" />
                 <element signature="method#YouLinkAndNameTest#0;class#MainIndependent#0" expanded="false" />
                 <element signature="method#ExploreLinkAndPhotoTest#0;class#MainIndependent#0" expanded="false" />
-                <element signature="method#NavigateToDetailsTest#0;class#MainIndependent#0" expanded="false" />
                 <element signature="method#DetailsTitleTest#0;class#MainIndependent#0" expanded="false" />
                 <element signature="method#DetailsAuthorTest#0;class#MainIndependent#0" expanded="false" />
                 <element signature="method#DetailsFollowTest#0;class#MainIndependent#0" expanded="false" />
@@ -109,13 +127,23 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="flickr.story" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/stories/flickr.story">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="595">
+              <caret line="35" column="26" lean-forward="true" selection-start-line="35" selection-start-column="26" selection-end-line="35" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="XSLT Stylesheet" />
         <option value="JBehave Story" />
+        <option value="XSLT Stylesheet" />
         <option value="Class" />
       </list>
     </option>
@@ -163,19 +191,24 @@
         <option value="$PROJECT_DIR$/src/main/java/pageObjects/SearchPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/pageObjects/PhotosPage.java" />
         <option value="$PROJECT_DIR$/src/test/test/ScreenshotListener.java" />
-        <option value="$PROJECT_DIR$/src/test/test/MainIndependent.java" />
         <option value="$PROJECT_DIR$/Config" />
-        <option value="$PROJECT_DIR$/src/main/java/MyStories.java" />
         <option value="$PROJECT_DIR$/src/test/test/MyStories.java" />
         <option value="$PROJECT_DIR$/src/test/test/steps/MySteps.java" />
         <option value="$PROJECT_DIR$/FlickrTest.iml" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/suites/parallel.xml" />
         <option value="$PROJECT_DIR$/src/main/java/pageObjects/LoginPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/pageObjects/YahooPage.java" />
         <option value="$PROJECT_DIR$/src/test/test/Conditions.java" />
-        <option value="$PROJECT_DIR$/src/main/java/steps/MySteps.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/suites/BDDparallel.xsl" />
+        <option value="$PROJECT_DIR$/src/main/resources/suites/parallel.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/suites/BDDparallel.xml" />
+        <option value="$PROJECT_DIR$/src/test/test/MainIndependent.java" />
+        <option value="$PROJECT_DIR$/src/main/java/MyStories.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ScenarioContext.java" />
+        <option value="$PROJECT_DIR$/src/main/java/steps/Trade.java" />
         <option value="$PROJECT_DIR$/src/main/resources/stories/flickr.story" />
+        <option value="$PROJECT_DIR$/src/main/java/steps/ScenarioContext.java" />
+        <option value="$PROJECT_DIR$/src/main/java/steps/MySteps.java" />
       </list>
     </option>
   </component>
@@ -235,7 +268,7 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1936" />
+    <option name="width" value="1924" />
     <option name="height" value="1056" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -278,8 +311,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -388,9 +422,34 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="epamPracticeTask-Flickr-" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="epamPracticeTask-Flickr-" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="steps" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -471,34 +530,6 @@
       <listeners />
       <method />
     </configuration>
-    <configuration default="false" name="MainIndependent.MainMenuItemsTest" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="FlickrTest" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" value="" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MainIndependent" />
-      <option name="METHOD_NAME" value="MainMenuItemsTest" />
-      <option name="GROUP_NAME" value="" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="file://$MODULE_DIR$" />
-      <option name="OUTPUT_DIRECTORY" value="" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" value="" />
-      <envs />
-      <properties />
-      <listeners />
-      <method />
-    </configuration>
     <configuration default="false" name="MainIndependent.ExploreLinkAndPhotoTest (1)" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="FlickrTest" />
@@ -546,6 +577,34 @@
       </option>
       <envs />
       <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="C:/Users/Uladzimir_Papeka/IdeaProjects/EPAM/epamPracticeTask-Flickr-/src/main/resources/suites/BDDparallel.xml" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="FlickrTest" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/main/resources/suites/BDDparallel.xml" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
       <method />
     </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
@@ -777,17 +836,17 @@
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="TestNG.MainIndependent" />
       <item index="1" class="java.lang.String" itemvalue="TestNG.C:/Users/Uladzimir_Papeka/IdeaProjects/EPAM/epamPracticeTask-Flickr-/src/main/resources/suites/parallel.xml" />
-      <item index="2" class="java.lang.String" itemvalue="TestNG.MainIndependent.MainMenuItemsTest" />
-      <item index="3" class="java.lang.String" itemvalue="TestNG.MainIndependent.ExploreLinkAndPhotoTest (1)" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.MyStories" />
+      <item index="2" class="java.lang.String" itemvalue="TestNG.MainIndependent.ExploreLinkAndPhotoTest (1)" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.MyStories" />
+      <item index="4" class="java.lang.String" itemvalue="TestNG.C:/Users/Uladzimir_Papeka/IdeaProjects/EPAM/epamPracticeTask-Flickr-/src/main/resources/suites/BDDparallel.xml" />
     </list>
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="JUnit.MyStories" />
-        <item index="1" class="java.lang.String" itemvalue="TestNG.C:/Users/Uladzimir_Papeka/IdeaProjects/EPAM/epamPracticeTask-Flickr-/src/main/resources/suites/parallel.xml" />
-        <item index="2" class="java.lang.String" itemvalue="TestNG.MainIndependent" />
-        <item index="3" class="java.lang.String" itemvalue="TestNG.MainIndependent.ExploreLinkAndPhotoTest (1)" />
-        <item index="4" class="java.lang.String" itemvalue="TestNG.MainIndependent.MainMenuItemsTest" />
+        <item index="1" class="java.lang.String" itemvalue="TestNG.C:/Users/Uladzimir_Papeka/IdeaProjects/EPAM/epamPracticeTask-Flickr-/src/main/resources/suites/BDDparallel.xml" />
+        <item index="2" class="java.lang.String" itemvalue="TestNG.C:/Users/Uladzimir_Papeka/IdeaProjects/EPAM/epamPracticeTask-Flickr-/src/main/resources/suites/parallel.xml" />
+        <item index="3" class="java.lang.String" itemvalue="TestNG.MainIndependent" />
+        <item index="4" class="java.lang.String" itemvalue="TestNG.MainIndependent.ExploreLinkAndPhotoTest (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -808,34 +867,34 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MyStories - 2017.02.03 at 16h 19m 24s.xml">
+    <history-entry file="MyStories - 2017.02.06 at 16h 29m 00s.xml">
       <configuration name="MyStories" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MyStories - 2017.02.03 at 16h 20m 37s.xml">
+    <history-entry file="MyStories - 2017.02.06 at 16h 31m 02s.xml">
       <configuration name="MyStories" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MyStories - 2017.02.03 at 16h 22m 16s.xml">
+    <history-entry file="MyStories - 2017.02.06 at 16h 31m 44s.xml">
       <configuration name="MyStories" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MyStories - 2017.02.03 at 16h 32m 51s.xml">
+    <history-entry file="MyStories - 2017.02.06 at 16h 32m 55s.xml">
       <configuration name="MyStories" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MyStories - 2017.02.03 at 16h 34m 35s.xml">
+    <history-entry file="MyStories - 2017.02.06 at 16h 33m 55s.xml">
       <configuration name="MyStories" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MyStories - 2017.02.03 at 16h 36m 07s.xml">
+    <history-entry file="MyStories - 2017.02.06 at 16h 35m 53s.xml">
       <configuration name="MyStories" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MyStories - 2017.02.03 at 17h 18m 31s.xml">
+    <history-entry file="MyStories - 2017.02.06 at 16h 38m 50s.xml">
       <configuration name="MyStories" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MyStories - 2017.02.03 at 17h 22m 18s.xml">
+    <history-entry file="MyStories - 2017.02.06 at 16h 46m 07s.xml">
       <configuration name="MyStories" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MyStories - 2017.02.03 at 17h 23m 50s.xml">
+    <history-entry file="MyStories - 2017.02.06 at 16h 47m 42s.xml">
       <configuration name="MyStories" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MyStories - 2017.02.03 at 17h 25m 34s.xml">
+    <history-entry file="MyStories - 2017.02.06 at 16h 59m 08s.xml">
       <configuration name="MyStories" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -849,8 +908,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1924" height="1056" extended-state="1" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -860,14 +919,14 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3217768" sideWeight="0.425" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13272922" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1335837" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3066089" sideWeight="0.575" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25460455" sideWeight="0.575" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18869936" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19420601" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17857143" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -888,7 +947,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="75" />
+      <option name="time" value="78" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -897,12 +956,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/target/surefire-reports/failure_screenshots/27_01_2017_02_14_25.png" />
-    <entry file="file://$PROJECT_DIR$/target/surefire-reports/failure_screenshots/27_01_2017_02_13_59.png" />
-    <entry file="file://$PROJECT_DIR$/target/surefire-reports/failure_screenshots/27_01_2017_02_13_53.png" />
-    <entry file="file://$PROJECT_DIR$/target/surefire-reports/failure_screenshots/27_01_2017_02_33_27.png" />
-    <entry file="file://$PROJECT_DIR$/target/surefire-reports/failure_screenshots/27_01_2017_02_33_32.png" />
-    <entry file="file://$PROJECT_DIR$/target/surefire-reports/failure_screenshots/27_01_2017_02_32_57.png" />
     <entry file="file://$PROJECT_DIR$/target/surefire-reports/failure_screenshots/27_01_2017_02_33_00.png" />
     <entry file="file://$PROJECT_DIR$/target/surefire-reports/failure_screenshots/27_01_2017_02_33_05.png" />
     <entry file="file://$PROJECT_DIR$/target/surefire-reports/failure_screenshots/27_01_2017_02_33_09.png" />
@@ -970,13 +1023,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/test/Main.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/pageObjects/PhotosPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="37" column="23" lean-forward="false" selection-start-line="37" selection-start-column="23" selection-end-line="37" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pageObjects/AuthorsPage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="433">
@@ -1005,13 +1051,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pageObjects/DetailsPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="23" column="18" lean-forward="false" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-firefox-driver/2.53.1/selenium-firefox-driver-2.53.1.jar!/org/openqa/selenium/firefox/FirefoxDriver.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="298">
@@ -1023,23 +1062,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="223">
           <caret line="30" column="34" lean-forward="true" selection-start-line="30" selection-start-column="34" selection-end-line="30" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pageObjects/HomePage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="11" column="72" lean-forward="false" selection-start-line="11" selection-start-column="47" selection-end-line="11" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-api/2.53.1/selenium-api-2.53.1.jar!/org/openqa/selenium/WebDriver.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="24" column="11" lean-forward="false" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1049,34 +1072,19 @@
           <caret line="38" column="68" lean-forward="true" selection-start-line="38" selection-start-column="68" selection-end-line="38" selection-end-column="68" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#IPrepare#0;class#MySteps#0" expanded="false" />
-            <element signature="method#IShouldCheckUrl#0;class#MySteps#0" expanded="false" />
-            <element signature="method#IShouldCheckNumberOfMenusItems#0;class#MySteps#0" expanded="false" />
+            <element signature="e#3574#3575#0" expanded="true" />
+            <element signature="e#3638#3639#0" expanded="true" />
+            <element signature="e#4412#4413#0" expanded="true" />
+            <element signature="e#4478#4479#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/jbehave-sample.iml" />
-    <entry file="file://$PROJECT_DIR$/src/test/test/ScreenshotListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="17" column="50" lean-forward="false" selection-start-line="17" selection-start-column="50" selection-end-line="17" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/FlickrTest.iml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" column="55" lean-forward="false" selection-start-line="12" selection-start-column="55" selection-end-line="12" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/suites/parallel.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1088,16 +1096,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/MyStories.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="22" column="38" lean-forward="false" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pageObjects/LoginPage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -1106,10 +1104,63 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-api/2.53.1/selenium-api-2.53.1.jar!/org/openqa/selenium/WebElement.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="20" column="9" lean-forward="false" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pageObjects/YahooPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="44" column="34" lean-forward="false" selection-start-line="44" selection-start-column="34" selection-end-line="44" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/jbehave/jbehave-core/4.1/jbehave-core-4.1.jar!/org/jbehave/core/embedder/StoryManager.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="333">
+          <caret line="412" column="9" lean-forward="true" selection-start-line="412" selection-start-column="9" selection-end-line="412" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/jbehave/jbehave-core/4.1/jbehave-core-4.1.jar!/org/jbehave/core/embedder/PerformableTree.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="328" column="0" lean-forward="false" selection-start-line="328" selection-start-column="0" selection-end-line="328" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pageObjects/HomePage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="39" column="20" lean-forward="false" selection-start-line="39" selection-start-column="20" selection-end-line="39" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/suites/BDDparallel.xsl" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/suites/parallel.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/suites/BDDparallel.xml" />
     <entry file="file://$PROJECT_DIR$/Config">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="9" lean-forward="false" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="19" />
+        <state relative-caret-position="34">
+          <caret line="2" column="5" lean-forward="false" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pageObjects/PhotosPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="12" column="31" lean-forward="false" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
           <folding />
         </state>
       </provider>
@@ -1122,51 +1173,54 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-api/2.53.1/selenium-api-2.53.1.jar!/org/openqa/selenium/WebElement.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="20" column="9" lean-forward="false" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pageObjects/YahooPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="44" column="34" lean-forward="false" selection-start-line="44" selection-start-column="34" selection-end-line="44" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/stories/flickr.story">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="47" lean-forward="true" selection-start-line="7" selection-start-column="47" selection-end-line="7" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/test/Conditions.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-196">
-          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+        <state relative-caret-position="153">
+          <caret line="19" column="4" lean-forward="false" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="26" />
           <folding>
             <element signature="method#cleanUp#0;class#Conditions#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/test/ScreenshotListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="17" column="50" lean-forward="false" selection-start-line="17" selection-start-column="50" selection-end-line="17" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-api/2.53.1/selenium-api-2.53.1.jar!/org/openqa/selenium/WebDriver.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="24" column="11" lean-forward="false" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pageObjects/DetailsPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="237">
+          <caret line="24" column="32" lean-forward="false" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
+          <folding>
+            <element signature="e#668#669#0" expanded="false" />
+            <element signature="e#713#714#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/test/MainIndependent.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="21" column="8" lean-forward="false" selection-start-line="21" selection-start-column="8" selection-end-line="22" selection-end-column="75" />
+        <state relative-caret-position="419">
+          <caret line="81" column="43" lean-forward="false" selection-start-line="81" selection-start-column="32" selection-end-line="81" selection-end-column="43" />
           <folding>
             <element signature="method#MainPageTitleTest#0;class#MainIndependent#0" expanded="false" />
+            <element signature="method#MainMenuItemsContTest#0;class#MainIndependent#0" expanded="false" />
             <element signature="method#MainMenuItemsTest#0;class#MainIndependent#0" expanded="false" />
             <element signature="method#SubMenuItemsTest#0;class#MainIndependent#0" expanded="false" />
             <element signature="method#YouLinkAndNameTest#0;class#MainIndependent#0" expanded="false" />
             <element signature="method#ExploreLinkAndPhotoTest#0;class#MainIndependent#0" expanded="false" />
-            <element signature="method#NavigateToDetailsTest#0;class#MainIndependent#0" expanded="false" />
             <element signature="method#DetailsTitleTest#0;class#MainIndependent#0" expanded="false" />
             <element signature="method#DetailsAuthorTest#0;class#MainIndependent#0" expanded="false" />
             <element signature="method#DetailsFollowTest#0;class#MainIndependent#0" expanded="false" />
@@ -1186,15 +1240,61 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/steps/MySteps.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/stories/flickr.story">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="39" lean-forward="true" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="39" />
+        <state relative-caret-position="595">
+          <caret line="35" column="26" lean-forward="true" selection-start-line="35" selection-start-column="26" selection-end-line="35" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/steps/Trade.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+          <folding>
+            <element signature="e#79#80#0" expanded="true" />
+            <element signature="e#111#112#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/MyStories.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="73">
+          <caret line="33" column="24" lean-forward="false" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/steps/ScenarioContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="28" lean-forward="false" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#IPrepare#0;class#MySteps#0" expanded="false" />
-            <element signature="method#IShouldCheckUrl#0;class#MySteps#0" expanded="false" />
-            <element signature="method#IShouldCheckNumberOfMenusItems#0;class#MySteps#0" expanded="false" />
+            <element signature="e#228#229#0" expanded="true" />
+            <element signature="e#261#262#0" expanded="true" />
+            <element signature="e#292#293#0" expanded="true" />
+            <element signature="e#332#333#0" expanded="true" />
+            <element signature="e#383#384#0" expanded="true" />
+            <element signature="e#413#414#0" expanded="true" />
+            <element signature="e#448#449#0" expanded="true" />
+            <element signature="e#484#485#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/steps/MySteps.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="433">
+          <caret line="140" column="27" lean-forward="true" selection-start-line="140" selection-start-column="27" selection-end-line="140" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3574#3575#0" expanded="true" />
+            <element signature="e#3638#3639#0" expanded="true" />
+            <element signature="e#4412#4413#0" expanded="true" />
+            <element signature="e#4478#4479#0" expanded="true" />
           </folding>
         </state>
       </provider>

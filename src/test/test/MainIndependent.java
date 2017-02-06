@@ -36,7 +36,7 @@ public class MainIndependent extends Conditions {
         Assert.assertEquals(resultingName,expectedName,"Menu items have other names");
     }
 
-    @Test(description = "#4 Sub-menu items contain items")
+    @Test(description = "#4 Sub-menu items contain links")
     public void SubMenuItemsTest() {
         System.out.println("test 4");
         driver.navigate().to(HomePage.HOME_PAGE_URL);
@@ -56,7 +56,7 @@ public class MainIndependent extends Conditions {
     }
 
     @Test(description = "#6 [Explore]-link and checking photos with label '<photo_title> by <author>' ")
-    public void ExploreLinkAndPhotoTest() { //С этим тестом вопросы: имя автора не отображается в названии изображения, только ник
+    public void ExploreLinkAndPhotoTest() {
         System.out.println("test 6");
         driver.navigate().to(PhotosPage.PHOTOS_PAGE_URL);
         PhotosPage photospage = PageFactory.initElements(driver,PhotosPage.class);
