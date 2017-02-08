@@ -24,8 +24,7 @@ public class MyStories extends JUnitStories {
 
     public MyStories() {
         configuredEmbedder().embedderControls().doGenerateViewAfterStories(true).doIgnoreFailureInStories(true)
-                .doIgnoreFailureInView(true).useThreads(1); //.useThreads(2).useStoryTimeoutInSecs(60)
-
+                .doIgnoreFailureInView(true).useThreads(1).useStoryTimeoutInSecs(2000); //.useThreads(2).useStoryTimeoutInSecs(60)
 
     }
 

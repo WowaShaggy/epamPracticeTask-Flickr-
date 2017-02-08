@@ -42,8 +42,9 @@ public class AuthorsPage extends AbstractPage{
 
     public AuthorsPage checkNumberOfAlbums() throws InterruptedException {
 
-        Thread.sleep(15000); // нет необходимости при работающем JS ожидании
-
+        JSwait();
+         // нет необходимости при работающем JS ожидании
+       Thread.sleep(20000);
         try {
             WebDriverWait wait = new WebDriverWait(driver, 20);
             WebElement waitElement = wait.until(
@@ -191,8 +192,7 @@ public class AuthorsPage extends AbstractPage{
     }
 
     public void JSwait() {
-
-        WebDriverWait wait = new WebDriverWait(driver, 50);
+        WebDriverWait wait = new WebDriverWait(driver, 100);
 
         wait.until( new Predicate<WebDriver>() {
                 public boolean apply (WebDriver driver){
@@ -201,6 +201,6 @@ public class AuthorsPage extends AbstractPage{
 
         }
         );
-        System.out.println("inside JavaScript method");
+        System.out.println("JSWAIT");
     }
 }

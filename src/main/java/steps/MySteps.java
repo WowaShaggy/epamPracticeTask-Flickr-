@@ -11,21 +11,23 @@ import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import pageObjects.*;
 
+import java.net.MalformedURLException;
+
 
 public class MySteps{
 
     protected WebDriver driver;
     protected WebDriverCreator creator;
-    ScenarioContext sc;
 
 
     @Given("I choose browzer '$browzer'")
-    public void IPrepare(String browzer) {
+    public void IPrepare(String browzer) throws MalformedURLException {
 
         switch (browzer) {
             case "Firefox": {
                 creator = new FirefoxDriverCreator();
-                driver = creator.factoryMethod();break;
+                driver = creator.factoryMethod();
+                break;
 
             }
             case "Chrome": {
@@ -114,22 +116,15 @@ public class MySteps{
         int numberAllTests = explorepage.itemsCount();
         System.out.println("Тестов пройдено:" + numberPassedTests + " из " + numberAllTests);
         Assert.assertEquals(numberPassedTests, numberAllTests,"Not each photo passes test!");
+        driver.quit();
     }
 
-
-    @Given("I am on ExplorePage")
-    public void IAmOnExplorePage(){
-        driver.navigate().to(ExplorePage.EXPLORE_PAGE_URL);
-    }
     @When("I go to DetailsPage from photo")
     public void IGoToDetailsPageFromPhoto() {
         ExplorePage explorepage = PageFactory.initElements(driver,ExplorePage.class);
         DetailsPage detailspage = explorepage.getDetailsURLfromPhoto();
-        System.out.println("ok");
         String nanana= detailspage.getUrl();
-        System.out.println("ok+"+nanana);
-        sc.addTrade(new Trade (nanana));
-        System.out.println("ok2+"+ sc.getFirstTrade());
+        MyThreadLocal.get().setData(nanana);
         explorepage = detailspage.goBack();
     }
     @When("I go to DetailsPage from title")
@@ -140,7 +135,181 @@ public class MySteps{
     @Then("I should compare urls")
     public void IShouldCompareUrls() {
         DetailsPage detailspage = PageFactory.initElements(driver,DetailsPage.class);
-        Assert.assertEquals(sc.getFirstTrade(),detailspage.getUrl(),"Photo and title navigate to different page");
+        Assert.assertEquals(MyThreadLocal.get().getData(), detailspage.getUrl(),"Photo and title navigate to different page");
     }
+
+    @Given("I am on ExplorePage")
+    public void IAmOnExplorePage(){
+        driver.navigate().to(ExplorePage.EXPLORE_PAGE_URL);
+    }
+    @When("I go to DetailsPage")
+    public void IGoToDetailsLink() {
+        ExplorePage explorepage = PageFactory.initElements(driver,ExplorePage.class);
+        DetailsPage detailspage = explorepage.getDetailsURLfromPhoto();
+    }
+    @Then("I should check Title of Photo")
+    public void IShouldCheckTitleOfPhoto() {
+        DetailsPage detailspage = PageFactory.initElements(driver,DetailsPage.class);
+        Assert.assertTrue(detailspage.getTitlePage().contains(detailspage.getTitlePhoto()));
+        driver.quit();
+    }
+
+    @Then("I should check Author of Photo")
+    public void IShouldCheckAuthorOfPhoto() {
+        DetailsPage detailspage = PageFactory.initElements(driver,DetailsPage.class);
+        Assert.assertTrue(detailspage.checkAuthorPhoto());
+        driver.quit();
+    }
+
+    @Then("I should check Follow-button below Photo")
+    public void IShouldCheckFollowButtonBelowPhoto() {
+        DetailsPage detailspage = PageFactory.initElements(driver,DetailsPage.class);
+        Assert.assertTrue(detailspage.checkFollowPhoto());
+        driver.quit();
+    }
+
+    @Then("I should check Numbers of Views etc")
+    public void IShouldCheckNumbersOfViewsETC() {
+        DetailsPage detailspage = PageFactory.initElements(driver,DetailsPage.class);
+        Assert.assertTrue(detailspage.checkNumbersPhoto());
+        driver.quit();
+    }
+
+    @Then("I should check Date of Photo")
+    public void IShouldCheckDateOfPhoto() {
+        DetailsPage detailspage = PageFactory.initElements(driver,DetailsPage.class);
+        Assert.assertTrue(detailspage.getDatePhoto());
+        driver.quit();
+    }
+
+    @Then("I should check Rights of Photo")
+    public void IShouldCheckRightsOfPhoto() {
+        DetailsPage detailspage = PageFactory.initElements(driver,DetailsPage.class);
+        Assert.assertTrue(detailspage.checkRightsPhoto());
+        driver.quit();
+    }
+
+    @Then("I should check Camera details")
+    public void IShouldCheckCameraDetails() {
+        DetailsPage detailspage = PageFactory.initElements(driver,DetailsPage.class);
+        Assert.assertTrue(detailspage.checkCameraDetailsPhoto());
+        driver.quit();
+    }
+
+    @Then("I should check Tags of Photo")
+    public void IShouldCheckTagsOfPhoto() {
+        DetailsPage detailspage = PageFactory.initElements(driver,DetailsPage.class);
+        Assert.assertTrue(detailspage.checkTagsDetailsPhoto());
+        driver.quit();
+    }
+
+    @When("I go to AuthorsPage")
+    public void IGoToAuthorsPage() {
+        DetailsPage detailspage = PageFactory.initElements(driver,DetailsPage.class);
+        AuthorsPage authorsPage = detailspage.goToAuthorsPage();
+    }
+    @Then("I should check Name on AuthorsPage")
+    public void IShouldCheckNameOnAuthorsPage() {
+        AuthorsPage authorsPage = PageFactory.initElements(driver,AuthorsPage.class);
+        Assert.assertTrue(authorsPage.getTitle().contains(authorsPage.getName()));
+        driver.quit();
+    }
+
+    @When("I go to Albums and check number of Albums")
+    public void IGoToAlbumsAndCheckNumberOfAlbums() throws InterruptedException {
+        AuthorsPage authorsPage = PageFactory.initElements(driver,AuthorsPage.class);
+        authorsPage.goToAlbums();
+        authorsPage.checkNumberOfAlbums();
+    }
+    @Then("I should check every Album")
+    public void IShouldCheckEveryAlbum() {
+        AuthorsPage authorsPage = PageFactory.initElements(driver,AuthorsPage.class);
+        Assert.assertEquals(authorsPage.cicleOfAlbumChecks(),authorsPage.albumCounter(),"Not each album has all necessary items");
+        driver.quit();
+    }
+
+    @When("I go to GroupPage")
+    public void IGoToGroupPage() throws InterruptedException {
+        AuthorsPage authorsPage = PageFactory.initElements(driver,AuthorsPage.class);
+        GroupsPage groupsPage = authorsPage.goToGroupsPage();
+    }
+    @Then("I should check GroupPage Url")
+    public void IShouldCheckGroupPageUrl() {
+        GroupsPage groupsPage = PageFactory.initElements(driver,GroupsPage.class);
+        Assert.assertEquals(driver.getCurrentUrl(),groupsPage.GROUPS_PAGE_URL,"Can't found Groups Page!");
+        driver.quit();
+    }
+
+    @Given("I am on GroupPage")
+    public void IAmOnGroupPage() {
+        driver.navigate().to(GroupsPage.GROUPS_PAGE_URL);
+    }
+    @Then("I should check recommended group")
+    public void IShouldCheckRecommendedGroup() {
+        GroupsPage groupsPage = PageFactory.initElements(driver,GroupsPage.class);
+        Assert.assertTrue(groupsPage.checkRecommendedGroups());
+        driver.quit();
+    }
+
+    @When("I go to GalleriesPage")
+    public void IGoToGalleriesPage(){
+        GroupsPage groupsPage = PageFactory.initElements(driver,GroupsPage.class);
+        GalleriesPage galleriesPage = groupsPage.goToGalleriesPage();
+    }
+    @Then("I should check GalleriesPage Url")
+    public void IShouldCheckGalleriesPageUrl() {
+        GalleriesPage galleriesPage = PageFactory.initElements(driver,GalleriesPage.class);
+        Assert.assertEquals(driver.getCurrentUrl(),galleriesPage.GALLERIES_PAGE_URL,"Can't found Gallery Page");
+        driver.quit();
+    }
+
+    @Given("I am on GalleriesPage")
+    public void IAmOnGalleriesPage() {
+        driver.navigate().to(GalleriesPage.GALLERIES_PAGE_URL);
+    }
+    @Then("I should check gallery's items")
+    public void IShouldCheckGalleriesPageItems() {
+        GalleriesPage galleriesPage = PageFactory.initElements(driver,GalleriesPage.class);
+        Assert.assertTrue(galleriesPage.checkGallery());
+        driver.quit();
+    }
+
+    @When("I go to SearchPage")
+    public void IGoToSearchPage(){
+        GalleriesPage galleriesPage = PageFactory.initElements(driver,GalleriesPage.class);
+        SearchPage searchPage = galleriesPage.goToSearchPageByButton();
+    }
+    @Then("I should check SearchPage Url")
+    public void IShouldCheckSearchPageUrl() {
+        SearchPage searchPage = PageFactory.initElements(driver,SearchPage.class);
+        Assert.assertEquals(searchPage.SEARCH_PAGE_URL, driver.getCurrentUrl(),"Can't found Gallery Page");
+        driver.quit();
+    }
+
+    @Given("I am on SearchPage")
+    public void IAmOnSearchPage() {
+        driver.navigate().to(SearchPage.SEARCH_PAGE_URL);
+    }
+    @When ("I send request '$request'")
+    public void ISendRequest(String request){
+        SearchPage searchPage = PageFactory.initElements(driver,SearchPage.class);
+        searchPage.sendRequest(request);
+        MyThreadLocal.get().setData(request);
+    }
+    @Then("I should check First Photo Name")
+    public void IShouldCheckFirstPhotoName() throws InterruptedException {
+        SearchPage searchPage = PageFactory.initElements(driver,SearchPage.class);
+        Assert.assertEquals(searchPage.getFirstTitle().contains(MyThreadLocal.get().getData()), true, "Your search returned incorrect results, possibly due Firefox!  ");
+        driver.quit();
+    }
+
+
+
+
+
+
+
+
+
 
 }

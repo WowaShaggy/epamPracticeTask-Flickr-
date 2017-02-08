@@ -111,7 +111,6 @@ public class MainIndependent extends Conditions {
         ExplorePage explorepage = PageFactory.initElements(driver,ExplorePage.class);
         DetailsPage detailspage = explorepage.getDetailsURLfromPhoto();
 
-
         Assert.assertTrue(detailspage.checkFollowPhoto());
     }
 
@@ -121,7 +120,6 @@ public class MainIndependent extends Conditions {
         driver.navigate().to(ExplorePage.EXPLORE_PAGE_URL);
         ExplorePage explorepage = PageFactory.initElements(driver,ExplorePage.class);
         DetailsPage detailspage = explorepage.getDetailsURLfromPhoto();
-
 
         Assert.assertTrue(detailspage.checkNumbersPhoto());
     }
@@ -142,7 +140,6 @@ public class MainIndependent extends Conditions {
         driver.navigate().to(ExplorePage.EXPLORE_PAGE_URL);
         ExplorePage explorepage = PageFactory.initElements(driver,ExplorePage.class);
         DetailsPage detailspage = explorepage.getDetailsURLfromPhoto();
-
 
         Assert.assertTrue(detailspage.checkRightsPhoto());
     }
