@@ -11,8 +11,6 @@ import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import pageObjects.*;
 
-import java.net.MalformedURLException;
-
 
 public class MySteps{
 
@@ -21,7 +19,7 @@ public class MySteps{
 
 
     @Given("I choose browzer '$browzer'")
-    public void IPrepare(String browzer) throws MalformedURLException {
+    public void IPrepare(String browzer){
 
         switch (browzer) {
             case "Firefox": {

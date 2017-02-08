@@ -2,7 +2,7 @@ Narrative: I should create a framework for testing site flickr
 
 Lifecycle:
 Before:
-Given I choose browzer 'Firefox'
+Given I choose browzer 'Chrome'
 Given I login as 'wowashaggy@yahoo.com' with password 'mylife4aiur'
 
 Scenario: I should see coincidence of url
