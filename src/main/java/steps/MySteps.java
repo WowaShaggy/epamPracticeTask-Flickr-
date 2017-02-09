@@ -7,9 +7,16 @@ import org.jbehave.core.annotations.Given;
 import org.jbehave.core.annotations.Then;
 import org.jbehave.core.annotations.When;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import pageObjects.*;
+
+import java.net.MalformedURLException;
+import java.net.URL;
 
 
 public class MySteps{
@@ -31,6 +38,34 @@ public class MySteps{
             case "Chrome": {
                 creator = new ChromeDriverCreator();
                 driver = creator.factoryMethod();break;
+            }
+
+        }
+    }
+
+
+    @Given("I choose browzer '$browzer' GRID")  //Это тестовый запуск с помощью Selenium GRID
+    public void IUseGRID(String browzer) throws MalformedURLException {
+
+        switch (browzer) {
+            case "Firefox": {
+
+                System.setProperty("webdriver.gecko.driver", "geckodriver.exe");
+                DesiredCapabilities capability = DesiredCapabilities.firefox();
+                capability.setBrowserName("firefox");
+                driver = new FirefoxDriver();
+                driver.manage().window().maximize();
+                driver = new RemoteWebDriver(new URL("http://localhost:7654/wd/hub"), capability);
+                break;
+
+            }
+            case "Chrome": {
+                System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
+                DesiredCapabilities capability = DesiredCapabilities.chrome();
+                driver = new ChromeDriver();
+                driver.manage().window().maximize();
+                driver = new RemoteWebDriver(new URL("http://localhost:7654/wd/hub"), capability);
+                break;
             }
 
         }
